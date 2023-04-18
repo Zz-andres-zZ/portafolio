@@ -1,0 +1,25 @@
+#footer {
+    background: #fff;
+    text-align: center;
+}
+
+#footer .row>div {
+    padding: 1rem;
+}
+
+
+/* NAV LINK */
+#footer .nav {
+    padding: 1rem 2rem 0;
+    justify-content: center;
+}
+
+#footer .nav li a {
+    color: #818181;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#footer .nav li a:hover {
+    color: #000;
+}

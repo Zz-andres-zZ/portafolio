@@ -1,0 +1,139 @@
+main #contact {
+    /* display: flex; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* top: -50px; */
+    /* flex-wrap: wrap; */
+}
+
+main #contact h3 {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+}
+
+main #contact .content-title {
+    text-align: center;
+    margin: 0px 0 1rem;
+    width: 100%;
+}
+
+main #contact .content-title p {
+    color: var(--color-text-muted);
+}
+
+main #contact .box-service .card {
+    transition: .3s;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+main #contact .box-service .card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
+}
+
+main #contact .box-service .card:hover .card-body .icon-mail {
+    color: #d75900;
+}
+
+main #contact .box-service .card:hover .card-body .icon-whatsap {
+    color: #00ad5c;
+}
+
+main #contact .box-service .card:hover .card-body .icon-discor {
+    color: #404eed;
+}
+
+main #contact .box-service .icon-mail,
+.icon-whatsap,
+.icon-discor {
+    font-size: 1rem;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    /* margin-bottom: 1rem; */
+    transition: .3s;
+}
+
+main #contact .box-service .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+main #contact .box-service .card .card-body h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+main #contact .box-service .card .card-body p {
+    margin: 0;
+}
+
+main #contact .box-service .card .card-body .nav-link {
+    color: var(--color-primary);
+    font-size: var(--small-font-size);
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+main #contact .box-service .card .card-body .nav-link.a:hover {
+    color: #d75900;
+}
+
+main #contact .box-service .card .card-body .nav-link.b:hover {
+    color: #00ad5c;
+}
+
+main #contact .box-service .card .card-body .nav-link.c:hover {
+    color: #404eed;
+}
+
+main #contact .box-service .card .card-body .nav-link i {
+    transition: .3s;
+    margin: 2px 0 0 0;
+}
+
+main #contact .box-service .card .card-body .nav-link:hover i {
+    -webkit-transform: translateX(.25rem);
+    transform: translateX(.25rem);
+    color: #1bd57e;
+}
+
+
+/* COL FORM */
+
+main #contact {}
+
+
+main #contact .contact-title {}
+
+main #contact .box-service {
+    display: flex;
+    justify-content: center;
+}
+
+main #contact form {
+    padding: 2rem 0 0;
+}
+
+main #contact form>div {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+main #contact form>div>div {
+    display: flex;
+    align-items: center;
+}
+
+main #contact form>div>div i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+main #contact form>div>div input {}

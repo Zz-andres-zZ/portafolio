@@ -1,0 +1,282 @@
+#error {
+    background: linear-gradient(#29185a, #12011a);
+}
+
+#error>div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/bg/overlay_stars.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: left top;
+}
+
+#error>div>div>div .message {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    position: relative;
+    top: -3rem;
+}
+
+#error>div>div>div .message span {
+    font-size: 12rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+#error>div>div>div .message h2 {
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+
+#error>div>div>div .message a {
+    color: var(--color-text-primary);
+    opacity: 0.6;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    padding: 8px 1rem;
+    position: relative;
+    top: 20px;
+    border: 1px solid rgb(66 132 179 / 42%);
+}
+
+
+#error>div>div>div .objects img {
+    z-index: 90;
+    pointer-events: none;
+}
+
+#error>div>div>div .object_rocket {
+    z-index: 95;
+    position: absolute;
+    transform: translateX(-50px);
+    top: 75%;
+    pointer-events: none;
+    animation: rocket-movement 200s linear infinite both running;
+}
+
+#error>div>div>div .object_earth {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: 90;
+    animation: spin-earth 300s infinite linear both;
+}
+
+#error>div>div>div .object_moon {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    /* transform: rotate(0deg); */
+    /* transition: transform ease-in 99999999999s; */
+}
+
+#error>div>div>div .object_astronaut {
+    animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+#error>div>div>div .box_astronaut {
+    z-index: 110 !important;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    will-change: transform;
+    animation: move-astronaut 50s infinite linear both alternate;
+}
+
+#error>div>div>div .glowing_stars .star {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 3px;
+    height: 3px;
+    opacity: 0.3;
+    will-change: opacity;
+}
+
+#error>div>div>div .glowing_stars .star:nth-child(1) {
+    top: 80%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+
+#error>div>div>div .glowing_stars .star:nth-child(2) {
+    top: 20%;
+    left: 40%;
+    animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+
+#error>div>div>div .glowing_stars .star:nth-child(3) {
+    top: 25%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+
+#error>div>div>div .glowing_stars .star:nth-child(4) {
+    top: 75%;
+    left: 80%;
+    animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+
+#error>div>div>div .glowing_stars .star:nth-child(5) {
+    top: 90%;
+    left: 50%;
+    animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+
+@media (max-width: 776px) {
+    #error>div>div>div .message {
+        top: -10%;
+    }
+
+    #error>div>div>div .object_moon {
+        top: 10%;
+        left: 30%;
+    }
+
+    #error>div>div>div .object_earth {
+        top: 20%;
+        left: 9%;
+    }
+}
+
+@media (max-width: 576px) {
+    #error>div>div>div .message {
+        top: 0;
+    }
+
+    #error>div>div>div .object_moon {
+        top: 10%;
+        left: 40%;
+    }
+
+    #error>div>div>div .object_earth {
+        top: 14%;
+        left: 10%;
+    }
+}
+
+@-moz-keyframes rocket-movement {
+    100% {
+        -moz-transform: translate(1200px, -600px);
+    }
+}
+
+@-webkit-keyframes rocket-movement {
+    100% {
+        -webkit-transform: translate(1200px, -600px);
+    }
+}
+
+@keyframes rocket-movement {
+    100% {
+        transform: translate(1200px, -600px);
+    }
+}
+
+@-moz-keyframes spin-earth {
+    100% {
+        -moz-transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@-webkit-keyframes spin-earth {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@keyframes spin-earth {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@-moz-keyframes move-astronaut {
+    100% {
+        -moz-transform: translate(-160px, -160px);
+    }
+}
+
+@-webkit-keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+    }
+}
+
+@keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+        transform: translate(-160px, -160px);
+    }
+}
+
+@-moz-keyframes rotate-astronaut {
+    100% {
+        -moz-transform: rotate(-720deg);
+    }
+}
+
+@-webkit-keyframes rotate-astronaut {
+    100% {
+        -webkit-transform: rotate(-720deg);
+    }
+}
+
+@keyframes rotate-astronaut {
+    100% {
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+}
+
+@-moz-keyframes glow-star {
+    40% {
+        -moz-opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -moz-opacity: 1;
+        -moz-transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+}
+
+@keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+        opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        border-radius: 999999px;
+    }
+}

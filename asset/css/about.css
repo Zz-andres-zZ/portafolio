@@ -1,0 +1,89 @@
+/* SECTION ABOUT */
+main #about {
+    /* display: flex; */
+    /* position: relative; */
+    /* align-items: center; */
+}
+
+main #about p {
+    color: var(--color-text-muted);
+}
+
+main #about .about_photo {
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #about .about_photo .photo img {
+    background: url(../img/profile/photo.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
+    height: 300px;
+    justify-self: center;
+    order: 1;
+    width: 300px;
+}
+
+main #about .about_data {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main #about .about_data .about_inf {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+main #about .about_data .about_inf .card {
+    width: 25%;
+    border: 1px solid #dee2e6;
+    margin: 0 2%;
+    text-align: center;
+    border-radius: 15%;
+}
+
+main #about .about_data .about_inf .card .card-body i {
+    font-size: 1.5rem;
+}
+
+main #about .about_data .about_inf .card .card-body h6 {
+    font-size: var(--small-font-size);
+}
+
+main #about .about_data .about_inf .card .card-body p {
+    margin: 0;
+    font-size: var(--tiny-font-size);
+    color: var(--color-text-muted);
+}
+
+main #about .about_description {
+    margin: auto;
+    color: var(--color-text-muted);
+}
+
+
+
+/**
+ * 
+ *  MEDIA QUERY 
+ * 
+**/
+
+@media (max-width: 575px) {
+    main #about {
+        padding: 40px 0 !important;
+    }
+}

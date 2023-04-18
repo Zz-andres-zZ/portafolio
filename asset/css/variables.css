@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #333;
+    --color-secundary: #bbdfff;
+    --container-color: #fff;
+    --background-color: #000000;
+    --color-border-gray: #dee2e6;
+
+    /** 
+    /** COLOR TEXT PROFILE USERS
+    */
+    --color-usertitle-name: #5a7391;
+    --clor-usertitle-job: #5b9bd1;
+    --color-text-muted: #212529bf;
+
+    /*===========*
+    NEW UPDATE
+    *===========*/
+
+    /* BACKGROUND TRANSPARENT */
+    --update-background-difu: #160b37de;
+
+    /* BACKGROUND FULL */
+    --update-background-page: #160b37;
+
+    --update-color-page: rgb(66, 132, 179);
+
+    /* BACKGROUND LINK HOVER */
+    --update-hover-background: #22185a;
+
+    /*=========* 
+    HEIGHT PAGE
+    *==========*/
+    --vh-section: 100vh !important;
+
+    /*=========*
+    FONT SIZE
+    *==========*/
+    --small-font-size: 0.875rem;
+    --tiny-font-size: 0.625rem;
+}
