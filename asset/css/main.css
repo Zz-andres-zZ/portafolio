@@ -167,8 +167,7 @@ body main {
 
 
 /* SECTION WELCOME */
-main #welcome {
-}
+main #welcome {}
 
 main #welcome .row {
     display: flex;
@@ -234,20 +233,19 @@ main #welcome .inf-profile>div a {
 main #welcome .photo {
     -webkit-animation: profile_animate 8s ease-in-out 1s infinite;
     animation: profile_animate 8s ease-in-out 1s infinite;
-    background: url(../img/profile/photo.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/profile/photo.png) center no-repeat;
+    background-size: 100%;
     box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
-    height: 300px;
-    justify-self: center;
+    height: 400px;
     /* order: 1; */
     width: 300px;
 }
 
 
 /* SECTION SKILL */
-main #skill {padding: 0 0 100px 0 !important;}
+main #skill {
+    /* padding: 0 0 100px 0 !important; */
+}
 
 main #skill .box_skill {
     background: #fff;
@@ -440,7 +438,7 @@ main .modal .modal-dialog .modal-content.card {
         order: 1;
         position: relative;
         left: -40px;
-        margin: 0 0 3rem 0;
+        margin: 0 0 1rem 0;
     }
 
     main #welcome .row {
@@ -449,11 +447,11 @@ main .modal .modal-dialog .modal-content.card {
     }
 
     main #skill {
-    padding: 0 0 70px !important;
-}
+        padding: 0 0 70px !important;
+    }
 
     main #skill .skill {
-    margin: 0 !important;
-}
+        margin: 0 !important;
+    }
 
 }

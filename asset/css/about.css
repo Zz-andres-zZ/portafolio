@@ -1,8 +1,7 @@
 /* SECTION ABOUT */
 main #about {
-    /* display: flex; */
-    /* position: relative; */
-    /* align-items: center; */
+    position: relative;
+    top: -40px;
 }
 
 main #about p {
@@ -85,5 +84,7 @@ main #about .about_description {
 @media (max-width: 575px) {
     main #about {
         padding: 40px 0 !important;
+        position: relative;
+        top: 0;
     }
 }

@@ -1,3 +1,8 @@
+main #services {
+    position: relative;
+    top: -30px;
+}
+
 main #services .container {
     display: flex;
     justify-content: center;
@@ -102,7 +107,7 @@ main #qualification .navegation-inf .nav {
 main #qualification .navegation-inf .nav .nav-link {
     border: 0;
     margin: 0 14px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     color: #000;
 }
 
@@ -240,5 +245,9 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
 **/
 
 @media (max-width: 575px) {
-    main #services {padding: 40px 0 !important;}
+    main #services {
+        padding: 40px 0 !important;
+        position: relative;
+        top: 0;
+    }
 }

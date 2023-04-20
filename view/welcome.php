@@ -1,16 +1,16 @@
 <section id="welcome">
-    <div class="container pt-lg-5">
-        <div class="row m-0 pb-lg-5">
+    <div class="container">
+        <div class="row m-0">
             <div class="col-2 col-lg-1 social">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="btn btn-dark p-1 px-2 rounded-4" href="#"><i class="bi bi-discord"></i></a>
+                        <a class="btn btn-dark p-1 px-2 rounded-4" href="https://discord.gg/midudev" target="_blank"><i class="bi bi-discord"></i></a>
                     </li>
                     <li class="nav-item my-4">
-                        <a class="btn btn-dark p-1 px-2 rounded-4" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-dark p-1 px-2 rounded-4" href="https://www.linkedin.com/in/andreshmndz/" target="_blank"><i class="bi bi-linkedin"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-dark p-1 px-2 rounded-4" href="#"><i class="bi bi-github"></i></a>
+                        <a class="btn btn-dark p-1 px-2 rounded-4" href="https://github.com/Zz-andres-zZ" target="_blank"><i class="bi bi-github" target="_blank"></i></a>
                     </li>
                 </ul>
             </div>

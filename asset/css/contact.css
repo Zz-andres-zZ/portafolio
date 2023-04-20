@@ -1,9 +1,4 @@
 main #contact {
-    /* display: flex; */
-    /* align-items: center; */
-    /* position: relative; */
-    /* top: -50px; */
-    /* flex-wrap: wrap; */
 }
 
 main #contact h3 {
@@ -106,7 +101,14 @@ main #contact .box-service .card .card-body .nav-link:hover i {
 
 /* COL FORM */
 
-main #contact {}
+main #contact {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top: -40px; */
+    flex-wrap: wrap;
+    padding: 3rem 0 !important;
+}
 
 
 main #contact .contact-title {}

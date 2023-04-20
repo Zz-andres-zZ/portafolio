@@ -15,7 +15,7 @@
                             <i class="bi bi-envelope-plus icon-mail"></i>
                             <h5 class="card-title">Email</h5>
                             <p>andresjhm.2440gmail.com</p>
-                            <a href="mailto:andresjhm.2440@gmail.com" type="button" class="nav-link a">
+                            <a href="mailto:andresjhm.2440@gmail.com" target="_blank" class="nav-link a">
                                 Contactame
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
@@ -29,7 +29,7 @@
                             <i class="bi bi-whatsapp icon-whatsap"></i>
                             <h5 class="card-title">Whatsapp</h5>
                             <p>+58 412 4722123</p>
-                            <a href="https://wa.me/584124722123?text=Hola%20saludos%20%F0%9F%91%8B%0A%0AGracias%20por%20tu%20interes%0Aen%20que%20puedo%20ayudarte.?" type="button" class="nav-link b">
+                            <a href="https://wa.me/584124722123?text=Hola%20saludos%20%F0%9F%91%8B%0A%0AGracias%20por%20tu%20interes%0Aen%20que%20puedo%20ayudarte.?" target="_blank" class="nav-link b">
                                 Escribeme
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
@@ -42,7 +42,7 @@
                         <div class="card-body">
                             <i class="bi bi-discord icon-discor"></i>
                             <h5 class="card-title">Discord</h5>
-                            <a type="button" class="nav-link c">
+                            <a href="https://discord.gg/midudev" target="_blank" class="nav-link c">
                                 Conectate
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
