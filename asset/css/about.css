@@ -6,6 +6,8 @@ main #about {
 
 main #about p {
     color: var(--color-text-muted);
+    display: block;
+    margin-bottom: 2rem !important;
 }
 
 main #about .about_photo {
@@ -15,6 +17,7 @@ main #about .about_photo {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 400px;
 }
 
 main #about .about_photo .photo img {
@@ -30,7 +33,6 @@ main #about .about_photo .photo img {
 }
 
 main #about .about_data {
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

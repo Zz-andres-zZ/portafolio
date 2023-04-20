@@ -22,7 +22,7 @@
 
             <div class="col-6 col-lg-4">
                 <div class="box-service">
-                    <div class="card border">
+                    <div class="card border border-top-primary">
                         <div class="card-body">
                             <i class="bi bi-code icon-code"></i>
                             <h5 class="card-title">Análisis de<br>datos</h5>
