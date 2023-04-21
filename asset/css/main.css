@@ -190,7 +190,7 @@ main #welcome .inf-profile {
 }
 
 main #welcome .inf-profile>div {
-    /* padding: 2rem; */
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -198,6 +198,7 @@ main #welcome .inf-profile>div {
 
 main #welcome .inf-profile>div .title {
     -webkit-text-stroke-width: thin;
+    /* width: 100%; */
 }
 
 main #welcome .inf-profile>div .subtitle {
@@ -237,7 +238,7 @@ main #welcome .photo {
     background-size: 100%;
     box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
     height: 400px;
-    /* order: 1; */
+    order: 1;
     width: 300px;
 }
 
@@ -437,13 +438,14 @@ main .modal .modal-dialog .modal-content.card {
     main #welcome .photo {
         order: 1;
         position: relative;
-        left: -40px;
         margin: 0 0 1rem 0;
+        width: 50%;
+        height: 300px;
     }
 
     main #welcome .row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     main #skill {
@@ -454,4 +456,67 @@ main .modal .modal-dialog .modal-content.card {
         margin: 0 !important;
     }
 
+}
+
+@media (max-width: 400px) {
+    main #welcome .inf-profile {
+        margin: 0 auto;
+    }
+
+    main #welcome .inf-profile>div {
+        padding: 2rem 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    main #welcome .photo {
+        height: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+    main #welcome .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+    main #welcome .inf-profile {
+        margin: 0;
+    }
+
+    main #welcome .photo {
+        height: 200px;
+    }
+}
+
+@media (max-width: 280px) {
+    main #welcome {
+        padding: 40px 0 !important;
+    }
+
+    main #welcome .photo {
+        order: 1;
+        position: relative;
+        margin: 0 0 1rem 0;
+        width: 130px;
+    }
+
+    main #skill {
+        padding: 0 0 70px !important;
+    }
+
+    main #skill .skill {
+        margin: 0 !important;
+    }
+
+    main #welcome .inf-profile>div .subtitle {
+        padding: 0;
+    }
+
+    main #welcome .inf-profile>div .subtitle::before {
+        content: none;
+    }
 }

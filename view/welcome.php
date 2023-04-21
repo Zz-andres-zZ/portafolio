@@ -14,7 +14,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-10 col-lg-5 inf-profile">
+            <div class="col-12 col-lg-5 inf-profile">
                 <div class="presentacion">
                     <h1 class="title display-3">Andrés Hndz
                         <svg class="ms-3" width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="home__hand">

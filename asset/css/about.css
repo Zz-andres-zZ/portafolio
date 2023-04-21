@@ -17,7 +17,7 @@ main #about .about_photo {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    /* height: 400px; */
 }
 
 main #about .about_photo .photo img {
@@ -44,7 +44,7 @@ main #about .about_data .about_inf {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     width: 100%;
 }
 
@@ -65,7 +65,7 @@ main #about .about_data .about_inf .card .card-body h6 {
 }
 
 main #about .about_data .about_inf .card .card-body p {
-    margin: 0;
+    margin: 0 !important;
     font-size: var(--tiny-font-size);
     color: var(--color-text-muted);
 }
@@ -89,4 +89,70 @@ main #about .about_description {
         position: relative;
         top: 0;
     }
+
+    main #about p {text-align: center;}
+
+    main #about .padding {
+        padding: 0;
+    }
+
+    main #about .about_photo {
+        height: auto;
+    }
+
+    main #about .about_photo img {
+        width: 60%;
+    }
+
+    main #about .about_data .about_inf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main #about .about_data .about_inf .card {}
+
+    main #about .about_data .about_inf .card .card-body {
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #about .about_data .about_inf .card .card-body p {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    main #about .about_data .about_inf {
+        gap: 0;
+    }
+
+    main #about .about_data .about_inf .card {
+        margin: 0;
+        width: 97px;
+    }
+
+    main #about .about_data .about_inf .card .card-body {
+        padding: 5px;
+    }
+
+    main #about .about_data .about_inf .card .card-body p {}
+}
+
+@media (max-width: 350px) {
+
+
+    main #about .about_data .about_inf .card {
+        margin: 0;
+        width: 90px;
+    }
+
+    main #about .about_data .about_inf .card .card-body {}
+
+
+    main #about .about_data .about_inf .card .card-body p {}
+
 }

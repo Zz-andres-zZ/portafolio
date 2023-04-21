@@ -12,7 +12,7 @@
                     <img src="asset/img/profile/photo.png" class="img-fluid rounded-4 border" width="50%" height="200px" alt="...">
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 padding">
                 <div class="about_data">
                     <div class="about_inf">
                         <div class="card">
