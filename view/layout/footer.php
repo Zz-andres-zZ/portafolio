@@ -1,3 +1,6 @@
+<?php
+    $url = isset($_GET['url']) ? $_GET['url'] : false;
+?>
 <section id="footer" class="border-1 border-top">
     <div class="container">
         <div class="row m-0">
@@ -11,8 +14,8 @@
                         <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= ($_GET['url'] == "home" ? "services" : "Testimonials") ?>">
-                            <?= ($_GET['url'] == "home" ? "Services" : "Testimonials") ?>
+                        <a class="nav-link" href="<?= ($url == "home" || !$url ? "services" : "Testimonials") ?>">
+                            <?= ($url == "home" || !$url ? "Services" : "Testimonials") ?>
                         </a>
                     </li>
                 </ul>
@@ -60,6 +63,7 @@
      * 
      **/
     const handle_section_active = (section) => {
+        console.log('section', section)
         const $menu_top_container = $("#menu_top");
         // clean all nav-link
         $menu_top_container.find(".nav-link").removeClass("active");
