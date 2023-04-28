@@ -6,20 +6,20 @@
         <div class="row m-0">
             <div class="col-12">
                 <h1 class="display-6">Andrés H.</h1>
-                <ul class="nav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link <?=($url == "about" ? "active" : "")?>" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link <?=($url == "portafolio" ? "active" : "")?>" href="portafolio">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= ($url == "home" || !$url ? "services" : "Testimonials") ?>">
-                            <?= ($url == "home" || !$url ? "Services" : "Testimonials") ?>
+                        <a class="nav-link" href="<?=($url == "home" || !$url ? "services" : "Testimonials");?>">
+                            <?=($url == "home" || !$url ? "Services" : "Testimonials");?>
                         </a>
                     </li>
                 </ul>
-                <ul id="social" class="nav">
+                <ul id="social" class="navbar-nav mb-2">
                     <li class="nav-item">
                         <a class="btn btn-dark p-1 px-2 rounded-4" href="https://discord.gg/midudev" target="_blank"><i class="bi bi-discord text-white"></i></a>
                     </li>
@@ -63,7 +63,7 @@
      * 
      **/
     const handle_section_active = (section) => {
-        console.log('section', section)
+        /* console.log('section', section) */
         const $menu_top_container = $("#menu_top");
         // clean all nav-link
         $menu_top_container.find(".nav-link").removeClass("active");

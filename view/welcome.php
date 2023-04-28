@@ -1,3 +1,4 @@
+
 <section id="welcome">
     <div class="container">
         <div class="row m-0">
@@ -15,8 +16,8 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-5 inf-profile">
-                <div class="presentacion">
-                    <h1 class="title display-3">Andrés Hndz
+                <div class="presentacion w-100 align-items-center justify-content-center text-center text-start-md">
+                    <h1 class="title display-4">Andrés Hndz
                         <svg class="ms-3" width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="home__hand">
                             <path d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z" fill="#FFDD67"></path>
                             <path d="M33.8996 4.88018C33.6746 4.80518 33.5246 4.80518 33.2996 4.80518C34.6496 5.33018 35.3996 6.75518 35.0996 8.25518L30.2996 32.9302L31.3496 33.1552L36.1496 8.48018C36.5246 6.75518 35.4746 5.18018 33.8996 4.88018Z" fill="#EBA352"></path>
@@ -32,7 +33,7 @@
                     </h1>
                     <h3 class="subtitle">Web developer</h3>
                     <p class="description">
-                        Soy Desarrollador Web en Venezuela, soy muy apasionado<br>y dedicado a mi trabajo.
+                        Soy Desarrollador Web en Venezuela, soy muy apasionado y dedicado a mi trabajo.
                     </p>
                     <a href="contact" class="btn btn-dark p-2 px-4">
                         let's talk
@@ -64,10 +65,10 @@
                 <p class="m-0">Mi nivel tecnico</p>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="box_skill rounded-4 gap-3">
+                <div class="row-cols-2 box_skill rounded-4 gap-3">
                     <p class="w-100 m-3 text-muted fw-semibold">Desarrollador Front-end</p>
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body html">
                             <i class="bi bi-filetype-html"></i>
                             <h5 class="card-title">HTML</h5>
                             <p class="card-text">Avanzado</p>
@@ -75,7 +76,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body bootstrap">
                             <i class="bi bi-bootstrap"></i>
                             <h5 class="card-title">Bootstrap</h5>
                             <p class="card-text">Intermedio</p>
@@ -83,7 +84,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body css">
                             <i class="bi bi-filetype-css"></i>
                             <h5 class="card-title">CSS</h5>
                             <p class="card-text">Avanzado</p>
@@ -91,7 +92,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body git">
                             <i class="bi bi-git"></i>
                             <h5 class="card-title">Git</h5>
                             <p class="card-text">Intermedio</p>
@@ -99,7 +100,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body js">
                             <i class="bi bi-filetype-js"></i>
                             <h5 class="card-title">JavaScript</h5>
                             <p class="card-text">Intermedio</p>
@@ -107,7 +108,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body react">
                             <i class="bi bi-filetype-sass"></i>
                             <h5 class="card-title">React</h5>
                             <p class="card-text">Intermedio</p>
@@ -115,7 +116,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body wp">
                             <i class="bi bi-wordpress"></i>
                             <h5 class="card-title">Wordpress</h5>
                             <p class="card-text">Intermedio</p>
@@ -123,7 +124,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body sass">
                             <i class="bi bi-filetype-sass"></i>
                             <h5 class="card-title">Sass</h5>
                             <p class="card-text">Intermedio</p>
@@ -133,10 +134,10 @@
             </div>
 
             <div class="col-12 col-lg-6">
-                <div class="box_skill rounded-4 gap-3">
+                <div class="row-cols-2 box_skill rounded-4 gap-3">
                     <p class="w-100 m-3 text-muted fw-semibold">Desarrollador Back-end</p>
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body php">
                             <i class="bi bi-filetype-php"></i>
                             <h5 class="card-title">PHP</h5>
                             <p class="card-text">Intermedio</p>
@@ -144,7 +145,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body mysql">
                             <i class="bi bi-database"></i>
                             <h5 class="card-title">MySQL</h5>
                             <p class="card-text">Intermedio</p>
@@ -152,7 +153,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body node">
                             <i class="bi bi-node-minus"></i>
                             <h5 class="card-title">Node</h5>
                             <p class="card-text">Intermedio</p>
@@ -160,7 +161,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body mdb">
                             <i class="bi bi-compass"></i>
                             <h5 class="card-title">MongoDB</h5>
                             <p class="card-text">Intermedio</p>
@@ -168,15 +169,15 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body python">
                             <i class="bi bi-body-text"></i>
-                            <h5 class="card-title">Python</h5>
+                            <h5 class="card-title"><span class="text-primary">P</span> ython</h5>
                             <p class="card-text">Intermedio</p>
                         </div>
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body docker">
                             <i class="bi bi-sina-weibo"></i>
                             <h5 class="card-title">Docker</h5>
                             <p class="card-text">Intermedio</p>
@@ -184,7 +185,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body java">
                             <i class="bi bi-filetype-java"></i>
                             <h5 class="card-title">Java</h5>
                             <p class="card-text">Intermedio</p>
@@ -192,7 +193,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body psql">
                             <i class="bi bi-database-gear"></i>
                             <h5 class="card-title">PostgreSQL</h5>
                             <p class="card-text">Intermedio</p>

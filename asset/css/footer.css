@@ -9,17 +9,24 @@
 
 
 /* NAV LINK */
-#footer .nav {
+#footer .navbar-nav {
     padding: 1rem 2rem 0;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
-#footer .nav li a {
-    color: #818181;
+#footer .navbar-nav li a {
+    color: #81818194;
     font-weight: 600;
     transition: .3s;
+    padding: 1rem .5rem;
 }
 
-#footer .nav li a:hover {
+#footer .navbar-nav li a.active {
+    color: #000;
+}
+
+#footer .navbar-nav li a:hover {
     color: #000;
 }

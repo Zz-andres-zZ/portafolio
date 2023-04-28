@@ -3,6 +3,11 @@
     display: flex;
     justify-content: center;
     position: relative;
+    color: #81818194;
+}
+
+#navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {
+    color: #000;
 }
 
 #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active::after {
@@ -51,6 +56,7 @@
         border-radius: 5px;
         width: 70%;
         padding: 5px 4rem;
+        color: #000;
     }
 
     #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link:hover {

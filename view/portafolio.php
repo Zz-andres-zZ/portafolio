@@ -30,7 +30,6 @@
                                     </figcaption>
                                 </figure>
                             </div>
-
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/taskManagement.png" class="rounded" alt="" loading="lazy">
@@ -44,7 +43,6 @@
                                     </figcaption>
                                 </figure>
                             </div>
-
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/crud.png" class="rounded" alt="" loading="lazy">
@@ -58,7 +56,6 @@
                                     </figcaption>
                                 </figure>
                             </div>
-
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/reproductor.png" class="rounded" alt="" loading="lazy">
@@ -72,7 +69,6 @@
                                     </figcaption>
                                 </figure>
                             </div>
-
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/bauer_store.png" class="rounded" alt="" loading="lazy">
@@ -86,7 +82,6 @@
                                     </figcaption>
                                 </figure>
                             </div>
-
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/card.png" class="rounded" alt="" loading="lazy">
@@ -104,7 +99,86 @@
                     </div>
 
                     <div class="tab-pane fade" id="nav-web" role="tabpanel2" aria-labelledby="nav-web-tab" tabindex="2">
-                        <div class="content-panel"></div>
+                        <div class="content-panel row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 m-0">
+                            <div class="col">
+                                <figure class="figure">
+                                    <img src="asset/img/portafolio/dolphin.png" class="rounded" alt="" loading="lazy">
+                                    <figcaption class="figure-caption">
+                                        Dolphins Swimming Academy
+                                        <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalDolphins">
+                                            View More
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </a>
+                                        <small class="text-muted">18/12/2022</small>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img src="asset/img/portafolio/taskManagement.png" class="rounded" alt="" loading="lazy">
+                                    <figcaption class="figure-caption">
+                                        Task Management
+                                        <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalTask">
+                                            View More
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </a>
+                                        <small class="text-muted">18/12/2022</small>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img src="asset/img/portafolio/crud.png" class="rounded" alt="" loading="lazy">
+                                    <figcaption class="figure-caption">
+                                        Crud php poo
+                                        <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalCrud">
+                                            View More
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </a>
+                                        <small class="text-muted">18/12/2022</small>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img src="asset/img/portafolio/reproductor.png" class="rounded" alt="" loading="lazy">
+                                    <figcaption class="figure-caption">
+                                        Reproductor Js
+                                        <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalReproductor">
+                                            View More
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </a>
+                                        <small class="text-muted">18/12/2022</small>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img src="asset/img/portafolio/bauer_store.png" class="rounded" alt="" loading="lazy">
+                                    <figcaption class="figure-caption">
+                                        Bauer Store
+                                        <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalBauer">
+                                            View More
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </a>
+                                        <small class="text-muted">18/12/2022</small>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure">
+                                    <img src="asset/img/portafolio/card.png" class="rounded" alt="" loading="lazy">
+                                    <figcaption class="figure-caption">
+                                        Card 3D
+                                        <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalCard">
+                                            View More
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </a>
+                                        <small class="text-muted">18/12/2022</small>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tab-pane fade" id="nav-app" role="tabpanel3" aria-labelledby="nav-app-tab" tabindex="3">
@@ -123,7 +197,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>

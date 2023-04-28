@@ -264,6 +264,76 @@ main #skill .box_skill .card {
     text-align: center;
 }
 
+main #skill .box_skill .card .card-body {
+    color: #fff;
+    border: 0;
+}
+
+main #skill .box_skill .card .card-body.html {
+    background-color: #ce5001;
+}
+
+main #skill .box_skill .card .card-body.bootstrap {
+    background-color: #7010ef;
+}
+
+main #skill .box_skill .card .card-body.css {
+    background-color: #0096dc;
+}
+
+main #skill .box_skill .card .card-body.git {
+    background-color: #e94e31;
+}
+
+main #skill .box_skill .card .card-body.js {
+    background-color: #fcd43f;
+}
+
+main #skill .box_skill .card .card-body.react {
+    background-color: #5ed3f3;
+}
+
+main #skill .box_skill .card .card-body.wp {
+    background: linear-gradient(180deg,#40a2c7 50%, #2786b6 50%);
+}
+
+main #skill .box_skill .card .card-body.sass {
+    background-color: #c66394;
+}
+
+main #skill .box_skill .card .card-body.php {
+    background-color: #7377ad;
+}
+
+main #skill .box_skill .card .card-body.mysql {
+    background: radial-gradient(#d58c17 30%, #005681 50%);
+}
+
+main #skill .box_skill .card .card-body.node {
+    background-color: #68b945;
+}
+
+main #skill .box_skill .card .card-body.mdb {
+    background-color: #118d4d;
+}
+
+main #skill .box_skill .card .card-body.python {
+    background: linear-gradient(135deg,#fcd43f 50%, #306897 50%);
+}
+
+main #skill .box_skill .card .card-body.docker {
+    background: linear-gradient(#0087b2 30%, #2391e6 70%);
+}
+
+main #skill .box_skill .card .card-body.java {
+    /* background: linear-gradient(#0087b2 30%, #2391e6 70%); */
+    background-color: #e71e24;
+}
+
+main #skill .box_skill .card .card-body.psql {
+    background-color: #2e5e8c;
+}
+
 main #skill .box_skill .card .card-body i {
     font-size: 1.7rem;
 }
@@ -276,7 +346,8 @@ main #skill .box_skill .card .card-body h5 {
 main #skill .box_skill .card .card-body p {
     margin: 0;
     font-size: var(--tiny-font-size);
-    color: var(--color-text-muted);
+    /* color: var(--color-text-muted); */
+    color: #fff;
 }
 
 
@@ -479,9 +550,9 @@ main .modal .modal-dialog .modal-content.card {
 
 @media (max-width: 350px) {
     main #welcome .row {
-    display: flex;
-    justify-content: space-around;
-}
+        display: flex;
+        justify-content: space-around;
+    }
 
     main #welcome .inf-profile {
         margin: 0;

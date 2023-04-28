@@ -32,14 +32,14 @@ main #portafolio .navegation-inf .nav-tabs {
 main #portafolio .navegation-inf .nav-tabs .nav-link {
     border: 0;
     margin: 0 14px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     color: #000;
 }
 
 main #portafolio .navegation-inf .nav-tabs .nav-link.active {
-    border: 0;
+    /* border: 0; */
     margin: 0 14px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: #222;
     color: #fff;
 }
@@ -47,7 +47,7 @@ main #portafolio .navegation-inf .nav-tabs .nav-link.active {
 main #portafolio .navegation-inf .nav-tabs .nav-link:hover {
     border: 0;
     margin: 0 14px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: #444;
     color: #fff !important;
 }
