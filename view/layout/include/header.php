@@ -1,11 +1,11 @@
 <nav id="navbar" class="navbar navbar-expand-lg bg-white shadow p-0 py-1">
     <div class="container-fluid px-lg-4 g-0">
-        <a class="nav-link navbar-brand m-0 p-0" href="home">
+        <a class="nav-link navbar-brand m-0 p-0" href="https://www.facebook.com/GoodLo0.k">
             <img src="asset/img/logo/logo.png" class="w-50 img-fluid" alt="logo">
         </a>
 
         <button class="navbar-toggler p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon p-3"></span>
         </button>
 
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -51,25 +51,25 @@
 
                 <ul id="menu_top" class="navbar-nav d-lg-none align-items-lg-center pt-2 justify-content-lg-end border-top flex-row flex-wrap align-content-start">
                     <li class="nav-item col-6 col-lg-auto">
-                        <a class="nav-link" href="home">
+                        <a class="nav-link" href="https://www.facebook.com/GoodLo0.k">
                             <i class="bi bi-house d-md-none"></i>
                             Facebook
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto">
-                        <a class="nav-link" href="about">
+                        <a class="nav-link" href="https://www.instagram.com/andresitojh/">
                             <i class="bi bi-person d-md-none"></i>
                             Instagram
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto">
-                        <a class="nav-link" href="services">
+                        <a class="nav-link" href="https://www.linkedin.com/in/andreshmndz/">
                             <i class="bi bi-postcard d-md-none"></i>
                             Linkedin
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto">
-                        <a class="nav-link" href="portfolio">
+                        <a class="nav-link" href="https://github.com/Zz-andres-zZ">
                             <i class="bi bi-person-badge d-md-none"></i>
                             Github
                         </a>

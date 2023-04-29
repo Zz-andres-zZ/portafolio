@@ -16,7 +16,7 @@
 
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade active show" id="nav-all" role="tabpanel1" aria-labelledby="nav-all-tab" tabindex="1">
-                        <div class="content-panel row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 m-0">
+                        <div class="content-panel row row-cols-2 row-cols-lg-3 g-3 m-0">
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/dolphin.png" class="rounded" alt="" loading="lazy">
@@ -26,7 +26,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -39,7 +39,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -52,7 +52,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -65,7 +65,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -78,7 +78,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -91,7 +91,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -109,7 +109,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -122,7 +122,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -135,7 +135,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -148,7 +148,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -161,7 +161,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -174,7 +174,7 @@
                                             View More
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
-                                        <small class="text-muted">18/12/2022</small>
+                                        <span class="text-muted">18/12/2022</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -211,7 +211,7 @@
         <div class="modal-content dolphins">
             <div class="modal-header">
                 <h3>Dolphins Swimming Academy</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/dolphin.png" class="img-fluid" alt="...">
@@ -226,7 +226,7 @@
         <div class="modal-content task">
             <div class="modal-header">
                 <h3>Task Management</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/taskManagement.png" class="img-fluid" alt="">
@@ -241,7 +241,7 @@
         <div class="modal-content crud">
             <div class="modal-header">
                 <h3>Crud php poo</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/crud.png" class="img-fluid" alt="">
@@ -256,7 +256,7 @@
         <div class="modal-content reproductor">
             <div class="modal-header">
                 <h3>Reproductor Js vanila</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/reproductor.png" class="img-fluid" alt="" loading="lazy">
@@ -271,7 +271,7 @@
         <div class="modal-content tienda">
             <div class="modal-header">
                 <h3>Tienda Bauer Store</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/bauer_store.png" class="img-fluid" alt="">
@@ -286,7 +286,7 @@
         <div class="modal-content card">
             <div class="modal-header">
                 <h3>Card 3D js</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/card.png" class="img-fluid" alt="" loading="lazy">
@@ -302,7 +302,7 @@
         <div class="modal-content app">
             <div class="modal-header">
                 <h3>Crud php poo</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img src="asset/img/portafolio/crud.png" class="img-fluid" alt="">

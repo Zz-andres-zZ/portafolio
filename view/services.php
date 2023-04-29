@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row g-3 m-0">
             <div class="content-title">
-                <h1 class="display-4">Services</h1>
+                <h1 class="display-1">Services</h1>
                 <p>Lo que ofrezco</p>
             </div>
             <div class="col-6 col-lg-4">
@@ -57,7 +57,7 @@
     <div class="container">
         <div class="row m-0">
             <div class="content-title">
-                <h1 class="display-4">Qualification</h1>
+                <h1 class="display-1">Qualification</h1>
                 <p>Mi viaje personal</p>
             </div>
             <div class="col-12">
@@ -67,6 +67,7 @@
                             <i class="bi bi-mortarboard"></i>
                             Educación
                         </a>
+                        <span class="mx-2"></span>
                         <a class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience" aria-selected="false">
                             <i class="bi bi-briefcase"></i>
                             Experiencia

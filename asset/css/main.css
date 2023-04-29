@@ -9,13 +9,10 @@ main>section {
     padding: 70px 0 !important;
 }
 
-main>section .container {
-    /* display: flex; */
-    /* position: relative; */
-    /* padding: 60px 0; */
+main>div .container {
+    padding: 60px 0;
     /* flex-direction: column; */
     height: 100%;
-    /* justify-content: center; */
 }
 
 .loadPage {
@@ -57,9 +54,9 @@ main>section .container {
 
 .Bubble__BubbleComponent-sc-13azvyr-3 {
     top: -40px !important;
-    right: -7px !important;
-    width: 40px !important;
-    height: 40px !important;
+    right: -8%;
+    width: 35px !important;
+    height: 35px !important;
 }
 
 
@@ -167,7 +164,13 @@ body main {
 
 
 /* SECTION WELCOME */
-main #welcome {}
+main #welcome {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* padding: 3rem 0 !important; */
+    align-items: center;
+}
 
 main #welcome .row {
     display: flex;
@@ -245,7 +248,7 @@ main #welcome .photo {
 
 /* SECTION SKILL */
 main #skill {
-    /* padding: 0 0 100px 0 !important; */
+    padding: 7rem 0 3rem !important;
 }
 
 main #skill .box_skill {
@@ -267,6 +270,7 @@ main #skill .box_skill .card {
 main #skill .box_skill .card .card-body {
     color: #fff;
     border: 0;
+    border-radius: 5px;
 }
 
 main #skill .box_skill .card .card-body.html {
@@ -294,7 +298,7 @@ main #skill .box_skill .card .card-body.react {
 }
 
 main #skill .box_skill .card .card-body.wp {
-    background: linear-gradient(180deg,#40a2c7 50%, #2786b6 50%);
+    background: linear-gradient(180deg, #40a2c7 50%, #2786b6 50%);
 }
 
 main #skill .box_skill .card .card-body.sass {
@@ -318,7 +322,7 @@ main #skill .box_skill .card .card-body.mdb {
 }
 
 main #skill .box_skill .card .card-body.python {
-    background: linear-gradient(135deg,#fcd43f 50%, #306897 50%);
+    background: linear-gradient(135deg, #fcd43f 50%, #306897 50%);
 }
 
 main #skill .box_skill .card .card-body.docker {
@@ -363,7 +367,9 @@ main .modal .modal-dialog .modal-content {
 }
 
 main .modal .modal-dialog .modal-content .modal-header {
-    border: 0;
+    /* border: 0; */
+    /* margin: 1rem 0 2rem 0; */
+    /* padding: 0; */
 }
 
 main .modal .modal-dialog .modal-content .modal-header h3 {
@@ -377,11 +383,12 @@ main .modal .modal-dialog .modal-content .modal-header h3 {
 
 /* CONTENT MODAL */
 main .modal .modal-dialog .modal-content .modal-body {
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
+    /* padding: 0; */
 }
 
 main .modal .modal-dialog .modal-content .modal-body img {
-    border-radius: 2%;
+    border-radius: 5px;
 }
 
 main .modal .modal-dialog .modal-content .modal-body p {
@@ -527,6 +534,14 @@ main .modal .modal-dialog .modal-content.card {
         margin: 0 !important;
     }
 
+    main .modal .modal-dialog .modal-content .modal-header {
+        padding: 0 0 1rem;
+        text-align: center;
+    }
+
+    main .modal .modal-dialog .modal-content .modal-body {
+        padding: 0;
+    }
 }
 
 @media (max-width: 400px) {

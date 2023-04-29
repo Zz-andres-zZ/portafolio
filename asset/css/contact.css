@@ -1,26 +1,25 @@
-main #contact {
-}
+main #contact {}
 
 main #contact h3 {
     text-align: center;
     color: var(--color-text-muted);
-    margin-bottom: 2rem;
 }
 
 main #contact .content-title {
     text-align: center;
-    margin: 0px 0 1rem;
+    margin: 0px 0 4rem;
     width: 100%;
 }
 
 main #contact .content-title p {
     color: var(--color-text-muted);
+    margin: 0;
 }
 
 main #contact .box-service .card {
     transition: .3s;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 80%;
 }
 
 main #contact .box-service .card:hover {
@@ -50,14 +49,14 @@ main #contact .box-service .icon-mail,
 }
 
 main #contact .box-service .card .card-body {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
 main #contact .box-service .card .card-body h5 {
-    margin: 0;
+    margin: 1rem 0;
     font-size: 1rem;
 }
 
@@ -104,14 +103,14 @@ main #contact .box-service .card .card-body .nav-link:hover i {
 main #contact {
     display: flex;
     align-items: center;
-    position: relative;
-    /* top: -40px; */
     flex-wrap: wrap;
     padding: 3rem 0 !important;
 }
 
 
-main #contact .contact-title {}
+main #contact .contact-title {
+    margin-bottom: 2rem;
+}
 
 main #contact .box-service {
     display: flex;
@@ -119,23 +118,35 @@ main #contact .box-service {
 }
 
 main #contact form {
-    padding: 2rem 0 0;
+    padding: 2rem 1rem;
 }
 
-main #contact form>div {
+main #contact form .row {
     display: flex;
-    justify-content: center;
     margin: 0;
-}
-
-main #contact form>div>div {
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-main #contact form>div>div i {
+main #contact form .row .box {
+    display: flex;
+    /* justify-content: center; */
+}
+
+main #contact form .row .box i {
     margin-right: 1rem;
     font-size: 1.5rem;
 }
 
-main #contact form>div>div input {}
+main #contact form .row .box input {}
+
+main #contact form .row input[type="submit"] {
+    position: relative !important;
+    margin-top: 1rem;
+}
+
+main #contact form .row svg {
+    position: absolute !important;
+    width: fit-content;
+    right: 20%;
+}

@@ -8,7 +8,7 @@
                 <h1 class="display-6">Andrés H.</h1>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link <?=($url == "about" ? "active" : "")?>" href="#about">About</a>
+                        <a class="nav-link <?=($url == "about" ? "active" : "")?>" href="about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?=($url == "portafolio" ? "active" : "")?>" href="portafolio">Projects</a>

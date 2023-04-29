@@ -1,6 +1,6 @@
 <section id="about">
     <div class="container">
-        <div class="row m-0" style="position:relative;top:-7%;">
+        <div class="row m-0">
             <div class="col-12">
                 <div class="about mb-lg-5 text-center">
                     <h2 class="display-4">About Me</h2>
@@ -8,8 +8,8 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="about_photo about_photo mb-5 pb-5 mb-lg-0 pb-lg-0">
-                    <img src="asset/img/profile/photo.png" class="img-fluid rounded-4 border" width="50%" height="200px" alt="...">
+                <div class="about_photo pb-5 pb-lg-0">
+                    <img src="asset/img/profile/photo.png" class="img-fluid rounded-4 border" alt="...">
                 </div>
             </div>
             <div class="col-12 col-lg-6 padding">
