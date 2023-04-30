@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row m-0">
             <div class="content-title">
-                <h1 class="display-4">Portfoly</h1>
-                <p>Trabajos mas recientes</p>
+                <h1 class="display-1">Portfoly</h1>
+                <p class="fs-4">Trabajos mas recientes</p>
             </div>
             <div class="col-12">
                 <nav class="navegation-inf">

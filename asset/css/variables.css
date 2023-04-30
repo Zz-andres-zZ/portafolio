@@ -1,9 +1,10 @@
 :root {
     --color-primary: #333;
     --color-secundary: #bbdfff;
-    --container-color: #fff;
+    --container-color: #212529;
     --background-color: #000000;
     --color-border-gray: #dee2e6;
+    --color-white: #fff;
 
     /** 
     /** COLOR TEXT PROFILE USERS

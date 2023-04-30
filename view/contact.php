@@ -7,14 +7,14 @@ $email = "";
 $telephone = "";
 $asunto = "";
 
-if (isset($_POST)) {
-    $fname = (isset($_POST['fname']) ? $_GET['fname'] : "");
-    $lname = (isset($_POST['lname']) ? $_GET['lname'] : "");
-    $direction = (isset($_POST['direction']) ? $_GET['direction'] : "");
-    $postal =  (isset($_POST['postal']) ? $_GET['postal'] : "");
-    $email = (isset($_POST['email']) ? $_GET['email'] : "");
-    $telephone = (isset($_POST['telephone']) ? $_GET['telephone'] : "");
-    $asunto = (isset($_POST['asunto']) ? $_GET['asunto'] : "");
+if (isset($_POST['enviar'])) {
+    $fname = (isset($_POST['fname']) ? $_POST['fname'] : "");
+    $lname = (isset($_POST['lname']) ? $_POST['lname'] : "");
+    $direction = (isset($_POST['direction']) ? $_POST['direction'] : "");
+    $postal =  (isset($_POST['postal']) ? $_POST['postal'] : "");
+    $email = (isset($_POST['email']) ? $_POST['email'] : "");
+    $telephone = (isset($_POST['telephone']) ? $_POST['telephone'] : "");
+    $asunto = (isset($_POST['asunto']) ? $_POST['asunto'] : "");
 
     $data = array();
 
@@ -30,26 +30,26 @@ if (isset($_POST)) {
 ?>
 <section id="contact">
     <div class="container">
-        <p class="display-1 mb-5 text-center">¡Contactame!</p>
-        <div class="border mb-4">
+        <p class="display-1">¡Contactame!</p>
+        <div class="mb-4">
             <?php if (isset($data)) { ?>
                 <?php if (count($data) > 0) { ?>
                     <?php for ($i = 0; $i < count($data); $i++) { ?>
-                        <div class='bg-danger border text-white p-1 text-center'>
+                        <div class='bg-danger w-50 mx-auto rounded my-1 text-white p-3 text-center'>
                             <ul class="navbar-nav">
                                 <li class="nav-item"><?= $data[$i] ?></li>
                             </ul>
                         </div>
                     <?php } ?>
                 <?php } else { ?>
-                    <div class='bg-success border text-white p-3 text-center'>Su mensaje se ha enviado con exito</div>
-                    <?php header("location:/") ?>
+                    <div class='bg-success w-50 mx-auto rounded text-white p-3 text-center'>Su mensaje se ha enviado con exito</div>
                 <?php } ?>
             <?php } ?>
         </div>
         <div class="row m-0">
+            <!-- SECTION DE INF -->
             <div class="col-12 col-lg-6">
-                <div class="box-service">
+                <!-- <div class="box-service">
                     <div class="card border">
                         <div class="card-body">
                             <i class="bi bi-envelope-plus icon-mail"></i>
@@ -86,39 +86,42 @@ if (isset($_POST)) {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79444.64391671501!2d-0.21428374128957384!3d51.51972634746694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876045108e9cad3%3A0x6514817fa6d57c9!2sThe+Web+Kitchen!5e0!3m2!1sen!2suk!4v1469624353093" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
+
+            <!-- SECTION DE CONTACT -->
             <div class="col-12 col-lg-6">
                 <h3 class="contact-title">Escríbeme tu proyecto</h3>
                 <div class="text-center">
                     <form class="form-control" method="POST">
 
                         <!-- Name / Lasname -->
-                        <div class="row row-cols-2 mb-3">
-                            <div class="box">
+                        <div class="row row-cols-1 row-cols-sm-2 mb-2 mb-md-3">
+                            <div class="box mb-2 mb-sm-0">
                                 <i class="bi bi-person-fill"></i>
-                                <input name="fname" type="text" placeholder="Nombre" class="form-control " require>
+                                <input name="fname" type="text" placeholder="Nombre" class="form-control" require>
                             </div>
                             <div class="box">
                                 <i class="bi bi-person-fill"></i>
-                                <input name="lname" type="text" placeholder="Apellido" class="form-control " require>
+                                <input name="lname" type="text" placeholder="Apellido" class="form-control" require>
                             </div>
                         </div>
 
                         <!-- Direction / Codepostal -->
-                        <div class="row row-cols-2 mb-3">
-                            <div class="box">
+                        <div class="row row-cols-1 row-cols-sm-2 mb-2 mb-md-3">
+                            <div class="box mb-2">
                                 <i class="bi bi-pin-map-fill"></i>
                                 <input name="direction" type="text" placeholder="Direccion" class="form-control" require>
                             </div>
                             <div class="box">
                                 <i class="bi bi-postcard-fill"></i>
-                                <input name="postal" type="number" placeholder="Postal code" class="form-control" require>
+                                <input name="postal" type="number" placeholder="Postal code" class="form-control">
                             </div>
                         </div>
 
                         <!-- Email -->
-                        <div class="row mb-3">
+                        <div class="row mb-2 mb-md-3">
                             <div class="box">
                                 <i class="bi bi-envelope-at"></i>
                                 <input name="email" type="email" placeholder="Correo electrónico" class="form-control" require>
@@ -126,8 +129,8 @@ if (isset($_POST)) {
                         </div>
 
                         <!-- Asunto / Telephone -->
-                        <div class="row row-cols-2 mb-3">
-                            <div class="box">
+                        <div class="row row-cols-1 row-cols-sm-2 mb-2 mb-md-3">
+                            <div class="box mb-2">
                                 <i class="bi bi-telephone"></i>
                                 <input name="telephone" type="tel" placeholder="+58 412 12345678" class="form-control">
                             </div>
@@ -145,7 +148,7 @@ if (isset($_POST)) {
                         </div>
 
                         <!-- Information -->
-                        <div class="row mb-3">
+                        <div class="row mb-2 mb-md-3">
                             <div class="col">
                                 <textarea class="form-control" id="message" name="message" placeholder="Introduzca su masaje para nosotros aquí. Nos pondremos en contacto con usted dentro de 2 días hábiles." rows="6" require></textarea>
                             </div>

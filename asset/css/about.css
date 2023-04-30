@@ -1,18 +1,38 @@
 /* SECTION ABOUT */
 main #about {
+    padding-top: 20px !important;
+    background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 0%, #fff 100%);
+    background-blend-mode: multiply;
+}
+
+main #about .container {}
+
+main #about .container .row {
     position: relative;
-    top: -40px;
+}
+
+main #about .about {
+    color: var(--container-color);
+    margin-bottom: 2rem;
 }
 
 main #about p {
-    color: var(--color-text-muted);
+    color: var(--container-color);
     display: block;
-    margin: 2rem 0 3rem;
+    margin: 0rem 0 2rem;
 }
 
 main #about .about_photo {
     margin: auto;
     text-align: center;
+    position: absolute;
+    width: 45%;
+    left: 5%;
+    top: 26%;
 }
 
 main #about .about_photo img {
@@ -46,7 +66,7 @@ main #about .about_data .about_inf {
 
 main #about .about_data .about_inf .card {
     width: 25%;
-    border: 1px solid #dee2e6;
+    border: 1px solid #eaeaea;
     margin: 0 2%;
     text-align: center;
 }
@@ -78,6 +98,24 @@ main #about .about_description {
  * 
 **/
 
+@media (max-width: 991px) {
+
+    main #about .container {}
+
+    main #about .container .row {
+        position: inherit;
+    }
+
+    main #about .padding {
+        padding: 0;
+    }
+
+    main #about .about_photo {
+        position: initial;
+        width: 100%;
+    }
+}
+
 @media (max-width: 575px) {
     main #about {
         padding: 30px 0 !important;
@@ -95,20 +133,17 @@ main #about .about_description {
         margin: 2rem 0;
     }
 
-    main #about .padding {
-        padding: 0;
-    }
-
     main #about .about_photo {
         padding: 0 !important;
+        position: inherit;
     }
 
     main #about .about_photo img {
-        /* width: 60%; */
+        width: 60%;
     }
 
     main #about .about_data {
-        padding: 40px 0;
+        padding: 10px 0;
     }
 
     main #about .about_data .about_inf {
@@ -135,11 +170,14 @@ main #about .about_description {
 @media (max-width: 400px) {
     main #about .about_data .about_inf {
         gap: 0;
+        display: flex;
+        justify-content: space-around;
     }
 
     main #about .about_data .about_inf .card {
         margin: 0;
         width: 97px;
+        border: 0;
     }
 
     main #about .about_data .about_inf .card .card-body {

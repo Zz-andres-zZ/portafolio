@@ -3,7 +3,7 @@
         <div class="row g-3 m-0">
             <div class="content-title">
                 <h1 class="display-1">Services</h1>
-                <p>Lo que ofrezco</p>
+                <p class="fs-4">Lo que ofrezco</p>
             </div>
             <div class="col-6 col-lg-4">
                 <div class="box-service">

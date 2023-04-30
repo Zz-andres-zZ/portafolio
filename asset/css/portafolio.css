@@ -1,10 +1,17 @@
 main #portafolio {
-    /* display: flex; */
-    /* align-items: center; */
-    /* position: relative; */
-    /* flex-wrap: wrap; */
-    padding: 60px 0;
+    padding-top: 30px !important;
+    position: relative;
+    background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 0%, #fff 100%);
+    background-blend-mode: multiply;
 }
+
+main #portafolio .container {}
+
+main #portafolio .container::before {}
 
 /* main #portafolio .container {
     display: flex;
@@ -14,10 +21,12 @@ main #portafolio {
 
 main #portafolio .content-title {
     text-align: center;
+    color: var(--container-color);
+    margin-bottom: 1rem;
 }
 
 main #portafolio .content-title p {
-    color: var(--color-text-muted);
+    color: var(--container-color);
 }
 
 main #portafolio .navegation-inf {
@@ -32,8 +41,9 @@ main #portafolio .navegation-inf .nav-tabs {
 main #portafolio .navegation-inf .nav-tabs .nav-link {
     border: 0;
     margin: 0 14px;
-    /* border-radius: 15px; */
-    color: #000;
+    color: var(--container-color);
+    width: 8%;
+    padding: 5px;
 }
 
 main #portafolio .navegation-inf .nav-tabs .nav-link.active {
@@ -164,6 +174,7 @@ main #portafolio .tab-content .tab-pane .content-panel figure figcaption {
 @media (max-width: 490px) {
     main #portafolio .navegation-inf .nav-tabs .nav-link {
         margin: 0 10px !important;
+        width: 20%;
     }
 
     main #portafolio .tab-content .tab-pane .content-panel figure {

@@ -1,4 +1,42 @@
-main #contact {}
+main #contact {
+    padding: 3rem 0 !important;
+    background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 0%, #fff 100%);
+    background-blend-mode: multiply;
+    /* background: #494d55 url(../img/bg/map.png) no-repeat center center; */
+}
+
+main #contact .container {}
+
+main #contact .container>p {
+    margin-bottom: 4rem;
+    text-align: center;
+    color: var(--container-color);
+}
+
+
+main #contact .contact-title {
+    margin-bottom: 2rem;
+}
+
+main #contact .box-service {
+    display: flex;
+    justify-content: center;
+}
+
+main #contact .contact-title {
+    margin-bottom: 2rem;
+    color: var(--container-color);
+}
+
+main #contact .box-service {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
 
 main #contact h3 {
     text-align: center;
@@ -99,23 +137,6 @@ main #contact .box-service .card .card-body .nav-link:hover i {
 
 
 /* COL FORM */
-
-main #contact {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 3rem 0 !important;
-}
-
-
-main #contact .contact-title {
-    margin-bottom: 2rem;
-}
-
-main #contact .box-service {
-    display: flex;
-    justify-content: center;
-}
 
 main #contact form {
     padding: 2rem 1rem;

@@ -112,7 +112,7 @@ main>div .container {
 ::-webkit-scrollbar-track {
     background: #5996ff;
     /* CAMBIA EL COLOR DEL CONTENEDOR */
-    -webkit-box-shadow: inset 1px 1px 2px #ffffff;
+    -webkit-box-shadow: inset 1px 1px 2px #fff;
     /* CAMBIAR EL COLOR DE LOS BORDER DEL CONTENEDOR PADRE */
     border: 1px solid #D8D8D8;
     /* COLOCAR UN BORDE PARA CUSTOMISAR */
@@ -165,16 +165,20 @@ body main {
 
 /* SECTION WELCOME */
 main #welcome {
-    display: flex;
     position: relative;
-    justify-content: center;
-    /* padding: 3rem 0 !important; */
-    align-items: center;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 1%, #fff 70%);
+    background-blend-mode: multiply;
 }
 
 main #welcome .row {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 4rem !important;
 }
 
 main #welcome .social {
@@ -193,7 +197,7 @@ main #welcome .inf-profile {
 }
 
 main #welcome .inf-profile>div {
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -225,6 +229,7 @@ main #welcome .inf-profile>div .subtitle::before {
 main #welcome .inf-profile>div .description {
     margin: 1rem 0;
     color: #757575;
+    padding: 0 2rem;
 }
 
 main #welcome .inf-profile>div a {
@@ -235,20 +240,27 @@ main #welcome .inf-profile>div a {
 }
 
 main #welcome .photo {
-    -webkit-animation: profile_animate 8s ease-in-out 1s infinite;
-    animation: profile_animate 8s ease-in-out 1s infinite;
-    background: url(../img/profile/photo.png) center no-repeat;
+    -webkit-animation: profile_animate 60s ease-in-out 2s infinite;
+    animation: profile_animate 60s ease-in-out 2s infinite;
+    background: url(../img/profile/photo.png) top no-repeat;
     background-size: 100%;
     box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
-    height: 400px;
+    height: 450px;
     order: 1;
-    width: 300px;
+    width: 350px;
 }
 
 
 /* SECTION SKILL */
 main #skill {
+    height: 100vh;
     padding: 7rem 0 3rem !important;
+    background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 0%, #fff 100%);
+    background-blend-mode: multiply;
 }
 
 main #skill .box_skill {
@@ -310,7 +322,7 @@ main #skill .box_skill .card .card-body.php {
 }
 
 main #skill .box_skill .card .card-body.mysql {
-    background: radial-gradient(#d58c17 30%, #005681 50%);
+    background: radial-gradient(#d58c17 -20%, #005681 70%);
 }
 
 main #skill .box_skill .card .card-body.node {
@@ -507,6 +519,7 @@ main .modal .modal-dialog .modal-content.card {
 @media (max-width: 575px) {
     main #welcome {
         padding: 40px 0 !important;
+        height: auto;
     }
 
     main #welcome .inf-profile {
@@ -528,6 +541,7 @@ main .modal .modal-dialog .modal-content.card {
 
     main #skill {
         padding: 0 0 70px !important;
+        height: auto;
     }
 
     main #skill .skill {

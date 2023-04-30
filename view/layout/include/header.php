@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar navbar-expand-lg bg-white shadow p-0 py-1">
     <div class="container-fluid px-lg-4 g-0">
-        <a class="nav-link navbar-brand m-0 p-0" href="https://www.facebook.com/GoodLo0.k">
+        <a class="nav-link navbar-brand m-0 p-0" href="home">
             <img src="asset/img/logo/logo.png" class="w-50 img-fluid" alt="logo">
         </a>
 

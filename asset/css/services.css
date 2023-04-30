@@ -1,7 +1,11 @@
 main #services {
-    position: relative;
-    /* top: -100px; */
-    /* height: 100vh; */
+    height: 100vh;
+    background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 0%, #fff 100%);
+    background-blend-mode: multiply;
 }
 
 main #services .container {
@@ -12,12 +16,13 @@ main #services .container {
 
 main #services .content-title {
     text-align: center;
-    margin: 0px 0 1rem;
+    margin: 0px 0 3rem;
     width: 100%;
+    color: var(--container-color);
 }
 
 main #services .content-title p {
-    color: var(--color-text-muted);
+    color: var(--container-color);
     margin: 0;
 }
 
@@ -96,9 +101,40 @@ main #services .box-service .card .card-body .nav-link:hover i {
 
 
 /* SECTION Qualification */
+
+main #qualification {
+    background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
+    background-image: -ms-linear-gradient(110deg, #fff 0%, #fff 100%);
+    background-blend-mode: multiply;
+}
+
+
+main #qualification .container {
+    position: relative;
+}
+
+main #qualification .container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+main #qualification .container .row {
+    /* padding: 3rem 0; */
+    color: var(--container-color);
+    position: relative;
+}
+
 main #qualification .content-title {
     text-align: center;
     margin: 0 0 3rem;
+    padding: 1rem;
 }
 
 /* NAVEGATION TAB */
@@ -112,7 +148,7 @@ main #qualification .navegation-inf .nav .nav-link {
     border: 0;
     /* margin-left: 5px; */
     border-radius: 5px;
-    color: #000;
+    color: var(--container-color);
 }
 
 main #qualification .navegation-inf .nav .nav-link.active {
@@ -142,16 +178,16 @@ main #qualification .tab-content .tab-pane .content-panel {
 }
 
 main #qualification .tab-content .tab-pane .content-panel h3 {
-    margin: 0 0 0 0;
+    margin: 0 0 0 0 !important;
     font-size: 1rem;
-    color: #000;
+    color: var(--container-color);
     line-height: 0.9;
 }
 
 main #qualification .tab-content .tab-pane .content-panel p {
     font-size: var(--small-font-size);
-    margin: 0 0 10px;
-    color: var(--color-text-muted);
+    margin: 5px 0 1rem 0;
+    color: var(--container-color);
 }
 
 main #qualification .tab-content .tab-pane .content-panel .systems {
@@ -163,7 +199,7 @@ main #qualification .tab-content .tab-pane .content-panel .systems {
 
 main #qualification .tab-content .tab-pane .content-panel .qualification-calender {
     font-size: var(--small-font-size);
-    color: var(--color-text-muted);
+    color: var(--container-color);
 }
 
 main #qualification .tab-content .tab-pane .content-panel .diploma {
@@ -178,7 +214,7 @@ main #qualification .tab-content .tab-pane .content-panel .diploma {
 main #qualification .tab-content .tab-pane .figure-content {
     margin: 0 2rem;
     padding: 1px;
-    background: #808080;
+    background: var(--container-color);
     height: 249px;
     position: relative;
 }
@@ -187,7 +223,7 @@ main #qualification .tab-content .tab-pane .figure-content .figure-rounded {
     position: absolute;
     padding: 0.5rem;
     border-radius: 50%;
-    background: #656565;
+    background: var(--container-color);
     top: -5px;
     left: -12px;
 }
@@ -198,7 +234,7 @@ main #qualification .tab-content .tab-pane .figure-content .figure-line {
     border-radius: 50%;
     top: 170px;
     left: -3px;
-    background: #5f5f5f;
+    background: var(--container-color);
 }
 
 main #qualification .tab-content .tab-pane .figure-content .figure-line2 {
@@ -207,7 +243,7 @@ main #qualification .tab-content .tab-pane .figure-content .figure-line2 {
     border-radius: 50%;
     top: 71px;
     left: -3px;
-    background: #5f5f5f;
+    background: var(--container-color);
 }
 
 main #qualification .tab-content .tab-pane .figure-content .figure-line3 {
@@ -216,7 +252,7 @@ main #qualification .tab-content .tab-pane .figure-content .figure-line3 {
     border-radius: 50%;
     top: 100px;
     left: -12px;
-    background: #5f5f5f;
+    background: var(--container-color);
 }
 
 main #qualification .tab-content .tab-pane .qualification-data {
@@ -251,15 +287,28 @@ main #qualification {}
 
 @media (max-width: 575px) {
     main #services {
-        padding: 40px 0 !important;
+        padding: 40px 0 99px !important;
         position: relative;
         top: 0;
         height: 100%;
     }
 
-    main #qualification {
-        padding-top: 70px !important;
+    main #services .content-title {
+    margin: 0 0 1rem;
+}
+
+    main #services .box-service .card {
+        height: auto;
     }
+
+
+    /* SECTION QUALIFICATION */
+    main #qualification .container::before {
+        /* left: 0; */
+        width: 94%;
+    }
+
+    main #qualification {}
 
     main #qualification .tab-content .tab-pane .content-panel .diploma {
         margin: 0;
@@ -315,7 +364,6 @@ main #qualification {}
 @media (max-width: 320px) {
 
     main #qualification .container .row .col-12 {
-
         padding: 0;
     }
 
