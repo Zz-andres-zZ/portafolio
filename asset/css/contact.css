@@ -12,7 +12,7 @@ main #contact {
 main #contact .container {}
 
 main #contact .container>h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
     color: var(--container-color);
 }

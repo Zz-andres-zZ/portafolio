@@ -121,13 +121,13 @@ if (isset($_POST['enviar'])) {
             <div class="col-12 col-lg-6">
                 <p class="contact-title">Escríbeme tu proyecto</p>
                 <div class="text-center">
-                    <form class="form-control" method="POST">
+                    <form class="form-control" method="POST" aria-autocomplete="true" autocomplete="on">
 
                         <!-- Name / Lasname -->
                         <div class="row row-cols-1 row-cols-sm-2 mb-2 mb-md-3">
                             <div class="box mb-2 mb-sm-0">
                                 <i class="bi bi-person-fill"></i>
-                                <input name="fname" type="text" placeholder="Nombre" class="form-control" require>
+                                <input name="fname" type="text" placeholder="Nombre" autofocus class="form-control" require>
                             </div>
                             <div class="box">
                                 <i class="bi bi-person-fill"></i>
