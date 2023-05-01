@@ -1,4 +1,7 @@
-<?php require "view/layout/head.php"; ?>
+<?php 
+require "view/layout/head.php"; 
+require "app/model/Database.php";
+?>
 
 <header class="sticky-top">
     <?php require "view/layout/include/header.php"; ?>

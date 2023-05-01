@@ -24,6 +24,24 @@ main>div .container {
     width: 100% !important;
 }
 
+.conection {
+    position: relative;
+}
+
+.conection span {
+    position: absolute;
+    background: greenyellow;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* ELIMINAR GOTA DE AGUA DEL SERVIDOR */
+a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
+    display: none !important;
+    position: relative;
+    right: -5000px;
+}
+
 #main {
     display: none;
     display: inline !important;
@@ -197,7 +215,7 @@ main #welcome .inf-profile {
 }
 
 main #welcome .inf-profile>div {
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -254,7 +272,7 @@ main #welcome .photo {
 /* SECTION SKILL */
 main #skill {
     height: 100vh;
-    padding: 7rem 0 3rem !important;
+    padding: 6rem 0 3rem !important;
     background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
     background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
     background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
@@ -515,11 +533,28 @@ main .modal .modal-dialog .modal-content.card {
  *  MEDIA QUERY 
  * 
 **/
-
-@media (max-width: 575px) {
+@media (max-width: 1024px) {
     main #welcome {
-        padding: 40px 0 !important;
         height: auto;
+    }
+
+    main #skill {
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    main #welcome {}
+
+    main #skill {}
+}
+
+@media (max-width: 576px) {
+    main #welcome {
+        padding: 40px 0 100px !important;
+        position: relative;
+        top: 0;
+        height: 100%;
     }
 
     main #welcome .inf-profile {

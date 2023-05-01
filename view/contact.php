@@ -30,69 +30,96 @@ if (isset($_POST['enviar'])) {
 ?>
 <section id="contact">
     <div class="container">
-        <p class="display-1">¡Contactame!</p>
-        <div class="mb-4">
-            <?php if (isset($data)) { ?>
-                <?php if (count($data) > 0) { ?>
-                    <?php for ($i = 0; $i < count($data); $i++) { ?>
-                        <div class='bg-danger w-50 mx-auto rounded my-1 text-white p-3 text-center'>
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><?= $data[$i] ?></li>
-                            </ul>
-                        </div>
-                    <?php } ?>
-                <?php } else { ?>
-                    <div class='bg-success w-50 mx-auto rounded text-white p-3 text-center'>Su mensaje se ha enviado con exito</div>
+        <h1 class="display-1">¡Contactame!</h1>
+        
+        <?php if (isset($data)) { ?>
+            <?php if (count($data) > 0) { ?>
+                <?php for ($i = 0; $i < count($data); $i++) { ?>
+                    <div class='bg-danger w-50 mx-auto rounded my-1 text-white p-3 text-center'>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><?= $data[$i] ?></li>
+                        </ul>
+                    </div>
                 <?php } ?>
+            <?php } else { ?>
+                <div class='bg-success w-25 mx-auto rounded text-white py-3 text-center'>
+                    <span>
+                        Su mensaje se ha enviado con exito
+                        redireccionando ...
+                    </span>
+                </div>
+                <script>
+                    setTimeout(() => {
+                        window.location.href = "welcome.php";
+                    }, 5000);
+                </script>
             <?php } ?>
-        </div>
+        <?php } ?>
+
         <div class="row m-0">
             <!-- SECTION DE INF -->
-            <div class="col-12 col-lg-6">
-                <!-- <div class="box-service">
-                    <div class="card border">
-                        <div class="card-body">
-                            <i class="bi bi-envelope-plus icon-mail"></i>
-                            <h5 class="card-title">Correo electrónico</h5>
-                            <p>andresjhm.2440gmail.com</p>
-                            <a href="mailto:andresjhm.2440@gmail.com" target="_blank" class="nav-link a">
-                                Contactame
-                                <i class="bi bi-arrow-right-short"></i>
-                            </a>
+            <div class="col-12 col-lg-6 order-1 order-lg-0">
+                <p class="contact-title">...</p>
+                <div class="content-box">
+
+                    <div class="box-service">
+                        <div class="card border">
+                            <div class="card-body">
+                                <div class="inf">
+                                    <i class="bi bi-envelope-plus icon-mail"></i>
+                                    <h5 class="card-title">Email</h5>
+                                </div>
+                                <a href="mailto:andresjhm.2440@gmail.com" target="_blank" class="nav-link a">
+                                    Contactame
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-service">
+                        <div class="card border">
+                            <div class="card-body">
+                                <div class="inf">
+                                    <i class="bi bi-whatsapp icon-whatsap"></i>
+                                    <h5 class="card-title">Whatsapp</h5>
+                                </div>
+                                <a href="https://wa.me/584124722123?text=Hola%20saludos%20%F0%9F%91%8B%0A%0AGracias%20por%20tu%20interes%0Aen%20que%20puedo%20ayudarte.?" target="_blank" class="nav-link b">
+                                    Escribeme
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-service">
+                        <div class="card border">
+                            <div class="card-body">
+                                <div class="inf">
+                                    <i class="bi bi-github icon-git"></i>
+                                    <h5 class="card-title">Github</h5>
+                                </div>
+                                <a href="https://discord.gg/midudev" target="_blank" class="nav-link c">
+                                    Conectate
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="iframe">
+                    <div class="card border-0">
+                        <div class="card-body h-50">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79444.64391671501!2d-0.21428374128957384!3d51.51972634746694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876045108e9cad3%3A0x6514817fa6d57c9!2sThe+Web+Kitchen!5e0!3m2!1sen!2suk!4v1469624353093" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="box-service">
-                    <div class="card border">
-                        <div class="card-body">
-                            <i class="bi bi-whatsapp icon-whatsap"></i>
-                            <h5 class="card-title">Whatsapp</h5>
-                            <p>+58 412 4722123</p>
-                            <a href="https://wa.me/584124722123?text=Hola%20saludos%20%F0%9F%91%8B%0A%0AGracias%20por%20tu%20interes%0Aen%20que%20puedo%20ayudarte.?" target="_blank" class="nav-link b">
-                                Escribeme
-                                <i class="bi bi-arrow-right-short"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-service">
-                    <div class="card border">
-                        <div class="card-body">
-                            <i class="bi bi-discord icon-discor"></i>
-                            <h5 class="card-title">Discord</h5>
-                            <a href="https://discord.gg/midudev" target="_blank" class="nav-link c">
-                                Conectate
-                                <i class="bi bi-arrow-right-short"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79444.64391671501!2d-0.21428374128957384!3d51.51972634746694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876045108e9cad3%3A0x6514817fa6d57c9!2sThe+Web+Kitchen!5e0!3m2!1sen!2suk!4v1469624353093" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
 
             <!-- SECTION DE CONTACT -->
             <div class="col-12 col-lg-6">
-                <h3 class="contact-title">Escríbeme tu proyecto</h3>
+                <p class="contact-title">Escríbeme tu proyecto</p>
                 <div class="text-center">
                     <form class="form-control" method="POST">
 
@@ -157,11 +184,13 @@ if (isset($_POST['enviar'])) {
                         <!-- Button / svg -->
                         <div class="row m-0">
                             <div class="col">
-                                <input type="submit" name="enviar" value="Enviar mensage" class="btn btn-dark">
-                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="block">
-                                    <path d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z" fill="var(--container-color)"></path>
-                                    <path d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z" fill="var(--container-color)"></path>
-                                </svg>
+                                <div class="position position-relative">
+                                    <input type="submit" name="enviar" value="Enviar mensage" class="btn btn-dark">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="block">
+                                        <path d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z" fill="var(--color-white)"></path>
+                                        <path d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z" fill="var(--color-white)"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </form>

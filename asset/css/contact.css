@@ -11,34 +11,32 @@ main #contact {
 
 main #contact .container {}
 
-main #contact .container>p {
+main #contact .container>h1 {
     margin-bottom: 4rem;
     text-align: center;
     color: var(--container-color);
 }
 
-
 main #contact .contact-title {
-    margin-bottom: 2rem;
-}
-
-main #contact .box-service {
-    display: flex;
-    justify-content: center;
-}
-
-main #contact .contact-title {
+    font-size: 2.2rem;
     margin-bottom: 2rem;
     color: var(--container-color);
 }
 
-main #contact .box-service {
+main #contact .content-box {
     display: flex;
-    justify-content: center;
-    width: 50%;
+    margin-bottom: 2rem;
+    gap: 10px;
 }
 
-main #contact h3 {
+main #contact .content-box .box-service {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main #contact p {
     text-align: center;
     color: var(--color-text-muted);
 }
@@ -56,8 +54,7 @@ main #contact .content-title p {
 
 main #contact .box-service .card {
     transition: .3s;
-    margin-bottom: 1rem;
-    width: 80%;
+    width: 100%;
 }
 
 main #contact .box-service .card:hover {
@@ -72,13 +69,13 @@ main #contact .box-service .card:hover .card-body .icon-whatsap {
     color: #00ad5c;
 }
 
-main #contact .box-service .card:hover .card-body .icon-discor {
+main #contact .box-service .card:hover .card-body .icon-git {
     color: #404eed;
 }
 
 main #contact .box-service .icon-mail,
 .icon-whatsap,
-.icon-discor {
+.icon-git {
     font-size: 1rem;
     font-size: 2.5rem;
     color: var(--color-primary);
@@ -93,12 +90,14 @@ main #contact .box-service .card .card-body {
     justify-content: space-evenly;
 }
 
-main #contact .box-service .card .card-body h5 {
+main #contact .box-service .card .card-body .inf {}
+
+main #contact .box-service .card .card-body .inf h5 {
     margin: 1rem 0;
     font-size: 1rem;
 }
 
-main #contact .box-service .card .card-body p {
+main #contact .box-service .card .card-body .inf p {
     margin: 0;
 }
 
@@ -139,7 +138,7 @@ main #contact .box-service .card .card-body .nav-link:hover i {
 /* COL FORM */
 
 main #contact form {
-    padding: 2rem 1rem;
+    padding: 2rem .5rem;
 }
 
 main #contact form .row {
@@ -161,13 +160,53 @@ main #contact form .row .box i {
 
 main #contact form .row .box input {}
 
-main #contact form .row input[type="submit"] {
-    position: relative !important;
+main #contact form .row>div .position {
+    position: relative;
+    width: fit-content;
+    margin: auto;
     margin-top: 1rem;
+}
+
+main #contact form .row>div .position input[type="submit"] {
+    margin-top: 1rem;
+    padding: 6px 40px;
 }
 
 main #contact form .row svg {
     position: absolute !important;
-    width: fit-content;
-    right: 20%;
+    right: 8px;
+    bottom: 7px;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    main #contact .row {}
+}
+
+
+@media (max-width: 576px) {
+    main #contact {
+        padding: 40px 0 99px !important;
+        position: relative;
+        top: 0;
+        height: 100%;
+    }
+
+    main #contact .content-box {
+        flex-wrap: wrap;
+    }
+
+    main #contact .container>h1 {
+        margin-bottom: 0;
+        font-size: 4.2rem;
+    }
+
+    main #contact .contact-title {
+        font-size: 1.5rem;
+        margin: 0 0 2rem 0;
+    }
+
+    main #contact form .row .box i {
+        display: none;
+    }
 }

@@ -24,6 +24,7 @@ main #services .content-title {
 main #services .content-title p {
     color: var(--container-color);
     margin: 0;
+    font-size: 1.5rem;
 }
 
 main #services .box-service .card {
@@ -137,6 +138,12 @@ main #qualification .content-title {
     padding: 1rem;
 }
 
+main #qualification .content-title h1 {}
+
+main #qualification .content-title p {
+    font-size: 1.5rem;
+}
+
 /* NAVEGATION TAB */
 main #qualification .navegation-inf .nav {
     display: flex;
@@ -170,6 +177,7 @@ main #qualification .tab-content {
 main #qualification .tab-content .tab-pane {
     margin: auto;
     transition: .2s;
+    padding: 0 1rem;
 }
 
 main #qualification .tab-content .tab-pane .content-panel {
@@ -288,15 +296,24 @@ main #qualification {}
 
 @media (max-width: 575px) {
     main #services {
-        padding: 40px 0 99px !important;
+        padding: 40px 0 100px !important;
         position: relative;
         top: 0;
         height: 100%;
     }
 
     main #services .content-title {
-    margin: 0 0 1rem;
-}
+        margin: 0 0 1rem;
+    }
+
+    main #services .content-title h1 {
+        font-size: 4.2rem;
+        margin: 0;
+    }
+
+    main #services .content-title p {
+        font-size: 1.2rem;
+    }
 
     main #services .box-service .card {
         height: auto;
@@ -304,6 +321,19 @@ main #qualification {}
 
 
     /* SECTION QUALIFICATION */
+    main #qualification .content-title {
+        margin-bottom: 1rem;
+    }
+
+    main #qualification .content-title h1 {
+        font-size: 2.2rem;
+    }
+
+    main #qualification .content-title p {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
     main #qualification .container::before {
         /* left: 0; */
         width: 94%;

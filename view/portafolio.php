@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row m-0">
             <div class="content-title">
-                <h1 class="display-1">Portfoly</h1>
-                <p class="fs-4">Trabajos mas recientes</p>
+                <h1 class="display-1">Portafolio</h1>
+                <p>Mis proyectos mas recientes</p>
             </div>
             <div class="col-12">
                 <nav class="navegation-inf">
@@ -16,7 +16,7 @@
 
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade active show" id="nav-all" role="tabpanel1" aria-labelledby="nav-all-tab" tabindex="1">
-                        <div class="content-panel row row-cols-2 row-cols-lg-3 g-3 m-0">
+                        <div class="content-panel row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 m-0">
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/dolphin.png" class="rounded" alt="" loading="lazy">
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="tab-pane fade" id="nav-web" role="tabpanel2" aria-labelledby="nav-web-tab" tabindex="2">
-                        <div class="content-panel row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3 m-0">
+                        <div class="content-panel row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 m-0">
                             <div class="col">
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/dolphin.png" class="rounded" alt="" loading="lazy">
