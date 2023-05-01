@@ -99,7 +99,7 @@
                                         diciembre 2022 - march 2022
                                     </div>
                                 </div>
-                                <hr class="">
+                                <hr class="my-4">
                                 <div class="diploma-content">
                                     <h3 class="mb-1">Desarrollo de sistemas web POS</h3>
                                     <p>Corporation Udemy</p>
@@ -123,7 +123,7 @@
                                         sept 2022 - dic 2022
                                     </div>
                                 </div>
-                                <hr>
+                                <hr class="my-4">
                                 <div class="diploma-content">
                                     <h3 class="mb-1">Web Developer</h3>
                                     <p>Desarrollado de sistema Instituto (Laravel 9)</p>

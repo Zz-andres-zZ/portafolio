@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     position: relative;
-    color: #81818194;
+    color: #a3a3a3;
 }
 
 #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {
     color: #000;
+    font-weight: 500;
 }
 
 #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active::after {
@@ -15,7 +16,7 @@
 }
 
 #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link:hover {
-    color: var(--background-color);
+    color: #646464;
 }
 
 #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link::after {
