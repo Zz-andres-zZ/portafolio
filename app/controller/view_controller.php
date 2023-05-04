@@ -45,5 +45,5 @@ if (isset($_GET['url'])) {
     }
 } else {
     $section_active = 'home';
-    require "./view/welcome.php";
+    require "view/welcome.php";
 }

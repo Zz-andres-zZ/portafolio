@@ -210,3 +210,10 @@ main #contact form .row svg {
         display: none;
     }
 }
+
+@media (max-width: 576px) {
+    main #contact .container>h1 {
+        margin-bottom: 0;
+        font-size: calc(1.625rem + 4.5vw);
+    }
+}

@@ -1,8 +1,10 @@
 @import "variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 body {
     height: 100vh !important;
     position: relative !important;
+    font-family: 'Comfortaa', cursive !important;
 }
 
 main>section {
@@ -50,39 +52,74 @@ a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_lo
 
 /*
  *
-    BTN WHATSAPP CUSTOMIXE STYLE
+    BTN WHATSAPP CUSTOMIZE STYLE
     ELIMINATE LINK DEMO APP WHATSAPP
  *
 */
-.whatsapp {
+
+/* CONTENEDOR PADRE */
+.hTNZSl {
+    display: flex !important;
+    flex-direction: column;
+}
+
+div[type="text"] {
+    color: var(--color-white);
+    box-shadow: none !important;
+    padding: 4px;
+    left: 4px;
+    margin-top: 2rem !important;
+    border-radius: 10px !important;
+    background-color: #0ec12f;
+}
+
+.kLLTIE::before,
+.kLLTIE::after {
+    border: 1px solid var(--color-border-gree) !important;
+}
+
+/* ELIMINA EL CONTENIDO QUE ESTA AL LADO DEL BOTO */
+.Bubble__BubbleText-sc-13azvyr-0 {
     display: none !important;
 }
 
-.eapp-whatsapp-chat-root-layout-component {
-    background-color: #085e53 !important;
+/* DAMOS BORDE SEMIREDONDO AL BTN */
+.kLdSGJ::before,
+.kLdSGJ::after {
+    border-radius: 10px !important;
 }
 
-.eapp-whatsapp-chat-root-layout-component a:nth-last-child(1) {
-    display: none !important;
+/* DAMOS BORDE SEMIREDONDO AL LA ANIMACION */
+.Bubble__BubbleComponent-sc-13azvyr-3::before {
+    border-radius: 10px !important;
 }
 
-.ecHlGe::before {
-    background-color: #00ff40 !important;
+/* DAMOS BORDE SEMIREDONDO AL LA ANIMACION */
+.Bubble__BubbleComponent-sc-13azvyr-3::after {
+    border-radius: 10px !important;
 }
 
-.Bubble__BubbleComponent-sc-13azvyr-3 {
-    top: -40px !important;
-    right: -8%;
-    width: 35px !important;
-    height: 35px !important;
+/* NOTIFICACION DEL BTN */
+.gFtgEV {
+    background: url(../img/notification/icon.png) center no-repeat !important;
+    background-size: 100% 100% !important;
+    width: 15px !important;
+    height: 15px !important;
+    top: -5px !important;
+    right: -3px !important;
 }
 
+.gFtgEV::before {
+    content: "";
+}
+
+.gFtgEV::after {
+    content: "";
+}
 
 @media (max-width: 768px) {
     main>section {}
 }
-
-
 
 /* FOCUS COLOR CHANGE BLUE */
 .pagination:focus,
@@ -150,12 +187,12 @@ body #scroll-top {
     display: none;
     color: #fff;
     position: fixed;
-    right: 15px;
+    right: 20px;
     text-align: center;
     transition: all 0.3s ease 0s;
     z-index: 200;
-    bottom: 20px;
-    z-index: 5454545454;
+    top: 85%;
+    z-index: 2000;
 }
 
 body #scroll-top:hover {
@@ -224,6 +261,7 @@ main #welcome .inf-profile>div {
 main #welcome .inf-profile>div .title {
     -webkit-text-stroke-width: thin;
     /* width: 100%; */
+    margin: 0;
 }
 
 main #welcome .inf-profile>div .subtitle {
@@ -232,6 +270,7 @@ main #welcome .inf-profile>div .subtitle {
     margin: .5rem 0;
     color: var(--color-primary);
     font-weight: 300;
+    display: flex;
 }
 
 main #welcome .inf-profile>div .subtitle::before {
@@ -534,17 +573,18 @@ main .modal .modal-dialog .modal-content.card {
  * 
 **/
 @media (max-width: 1024px) {
-    main #welcome {
-        height: auto;
-    }
+    main #welcome {}
 
     main #skill {
-        height: auto;
+        height: fit-content;
     }
 }
 
 @media (max-width: 992px) {
-    main #welcome {}
+    main #welcome {
+        padding-bottom: 1px !important;
+        height: 100%;
+    }
 
     main #skill {}
 }
@@ -554,7 +594,6 @@ main .modal .modal-dialog .modal-content.card {
         padding: 40px 0 100px !important;
         position: relative;
         top: 0;
-        height: 100%;
     }
 
     main #welcome .inf-profile {
@@ -576,7 +615,6 @@ main .modal .modal-dialog .modal-content.card {
 
     main #skill {
         padding: 0 0 70px !important;
-        height: auto;
     }
 
     main #skill .skill {
@@ -613,6 +651,10 @@ main .modal .modal-dialog .modal-content.card {
 }
 
 @media (max-width: 350px) {
+    main #welcome {
+        padding-bottom: 1px !important;
+    }
+
     main #welcome .row {
         display: flex;
         justify-content: space-around;

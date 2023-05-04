@@ -26,9 +26,13 @@
     <link rel="stylesheet" href="asset/css/error.css">
     <link rel="stylesheet" href="asset/css/footer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- BTN WHATSAPP -->
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+    <script src="asset/js/btn_watsapp.js"></script>
 
     <!-- STYLES BOOTSTRAP 5.3 -->
-    <link rel="stylesheet" href="asset/vendor/bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/bs/css/bootstrap.min.css">
 
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">

@@ -174,7 +174,10 @@ main #portafolio .tab-content .tab-pane .content-panel figure figcaption {
         padding: 40px 0 !important;
     }
 
-    main #portafolio .content-title h1 {}
+    main #portafolio .content-title h1 {
+    font-size: 3.8rem;
+    margin: 0;
+}
 
     main #portafolio .content-title p {}
 }

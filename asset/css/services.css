@@ -112,7 +112,6 @@ main #qualification {
     background-blend-mode: multiply;
 }
 
-
 main #qualification .container {
     position: relative;
 }
@@ -286,13 +285,21 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
     width: 13px;
 }
 
-main #qualification {}
-
 /**
  * 
  *  MEDIA QUERY 
  * 
 **/
+
+@media (max-width: 992px) {
+    main #services {
+        height: 100%;
+    }
+
+    main #qualification {
+        height: 100%;
+    }
+}
 
 @media (max-width: 575px) {
     main #services {
@@ -326,7 +333,8 @@ main #qualification {}
     }
 
     main #qualification .content-title h1 {
-        font-size: 2.2rem;
+        margin: 0;
+        font-size: calc(1.625rem + 4.5vw);
     }
 
     main #qualification .content-title p {

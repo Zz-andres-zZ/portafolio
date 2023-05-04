@@ -1,5 +1,5 @@
 <?php
-    $url = isset($_GET['url']) ? $_GET['url'] : false;
+$url = isset($_GET['url']) ? $_GET['url'] : false;
 ?>
 <section id="footer" class="border-1 border-top">
     <div class="container">
@@ -8,14 +8,14 @@
                 <h1 class="display-6">Andrés H.</h1>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link <?=($url == "about" ? "active" : "")?>" href="about">About</a>
+                        <a class="nav-link <?= ($url == "about" ? "active" : "") ?>" href="about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?=($url == "portafolio" ? "active" : "")?>" href="portafolio">Projects</a>
+                        <a class="nav-link <?= ($url == "portafolio" ? "active" : "") ?>" href="portafolio">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=($url == "home" || !$url ? "services" : "Testimonials");?>">
-                            <?=($url == "home" || !$url ? "Services" : "Testimonials");?>
+                        <a class="nav-link" href="<?= ($url == "home" || !$url ? "services" : "Testimonials"); ?>">
+                            <?= ($url == "home" || !$url ? "Services" : "Testimonials"); ?>
                         </a>
                     </li>
                 </ul>
@@ -42,16 +42,13 @@
 </section>
 
 </footer>
-<!-- End Footer -->
 
 <!-- ✅ load jQuery (optional) ✅ -->
-<script src="asset/vendor/jquery/jquery.min.js"></script>
+<script src="asset/jquery/jquery.min.js"></script>
 <!-- ✅ load Bootstrap bundle (require) ✅ -->
-<script src="asset/vendor/bs/js/bootstrap.bundle.min.js"></script>
+<script src="asset/bs/js/bootstrap.bundle.min.js"></script>
 <!-- ✅ load sweetalert (optional) ✅ -->
-<script src="asset/vendor/sweetalert/js/sweetalert2.all.min.js"></script>
-<!-- btn watsapp -->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="asset/sweetalert/js/sweetalert2.all.min.js"></script>
 <!-- ✅ load js (require) ✅ -->
 <script src="asset/js/app.js"></script>
 
@@ -73,14 +70,11 @@
         // add section active
         $section_target.addClass("active");
     };
+
     jQuery(() => {
         handle_section_active("<?= $section_active ?>");
     });
 </script>
-
-<div class="whatsapp">
-    <div class="elfsight-app-5f58b17e-5b3e-4d58-b970-ac968a85e7de"></div>
-</div>
 
 </body>
 

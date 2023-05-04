@@ -98,7 +98,11 @@ main #about .about_description {
  * 
 **/
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+
+    main #about {
+        height: 100%;
+    }
 
     main #about .container {}
 
