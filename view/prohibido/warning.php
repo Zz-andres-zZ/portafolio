@@ -40,17 +40,19 @@
 
     <script src="./js/warnin.js"></script>
     <script>
-        const btn = document.getElementById('go_back');
+        setTimeout(() => {
+            const btn = document.getElementById('go_back');
 
-        console.log(btn); // null
+            console.log(btn); // null
 
-        // ✅ Check if element exists before calling addEventListener()
-        if (btn) {
-            // Not called
-            btn.addEventListener('click', () => {
-                alert('You clicked the button');
-            });
-        }
+            // ✅ Check if element exists before calling addEventListener()
+            if (btn) {
+                // Not called
+                btn.addEventListener('click', () => {
+                    alert('You clicked the button');
+                });
+            }
+        }, 7000);
     </script>
 </body>
 
