@@ -2,28 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 body {
-    height: 100vh !important;
-    position: relative !important;
     font-family: 'Comfortaa', cursive !important;
 }
 
 main>section {
-    padding: 70px 0 !important;
+    padding: 80px 0;
 }
 
 main>div .container {
     padding: 60px 0;
-    /* flex-direction: column; */
     height: 100%;
 }
 
-.loadPage {
-    display: flex;
-    align-items: center !important;
-    justify-content: center !important;
-    background: white !important;
-    height: 100vh !important;
-    width: 100% !important;
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 100000;
+    transition: 1s all;
+}
+
+#preloader::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background: #fff url(../img/load/loading3.gif) center center no-repeat; */
+    background: #fff url(../img/load/box-move.gif) center center no-repeat;
+    z-index: 500000;
+    transition: 2s all;
+    object-fit: cover;
 }
 
 .conection {
@@ -44,23 +55,21 @@ a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_lo
     right: -5000px;
 }
 
-#main {
-    display: none;
-    display: inline !important;
-    height: 100% !important;
-}
-
 /*
  *
     BTN WHATSAPP CUSTOMIZE STYLE
     ELIMINATE LINK DEMO APP WHATSAPP
  *
 */
-
 /* CONTENEDOR PADRE */
 .hTNZSl {
     display: flex !important;
     flex-direction: column;
+    z-index: 1 !important;
+}
+
+.Window__Component-sc-1wwhwms-0 {
+    z-index: 1 !important;
 }
 
 div[type="text"] {
@@ -109,19 +118,14 @@ div[type="text"] {
     right: -3px !important;
 }
 
-.gFtgEV::before {
-    content: "";
-}
-
-.gFtgEV::after {
-    content: "";
-}
-
-@media (max-width: 768px) {
-    main>section {}
-}
-
 /* FOCUS COLOR CHANGE BLUE */
+.content-input input,
+.content-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .pagination:focus,
 .active>.page-link:focus,
 .page-link.active:focus,
@@ -139,12 +143,26 @@ div[type="text"] {
     box-shadow: 0 0 0 1px #5f5f5f !important;
 }
 
+/* CHANGE COLOR SELECTED DOCUMENT */
+::selection {
+    background: var(--container-color) !important;
+    border-radius: 5px !important;
+    color: #fff;
+}
+
+
 @-moz-document url-prefix() {
     ::-webkit-scrollbar {
         width: 0px !important;
         height: 0px;
         background: transparent;
     }
+}
+
+::-webkit-progress-bar {
+    padding: 10px;
+    width: 100%;
+    background-color: #0087b2;
 }
 
 ::-webkit-scrollbar {
@@ -178,11 +196,6 @@ html {
     touch-action: manipulation;
 }
 
-body {
-    width: 100%;
-    height: 100vh !important;
-}
-
 body #scroll-top {
     display: none;
     color: #fff;
@@ -190,9 +203,9 @@ body #scroll-top {
     right: 20px;
     text-align: center;
     transition: all 0.3s ease 0s;
-    z-index: 200;
-    top: 83%;
-    z-index: 2000;
+    /* z-index: 200; */
+    bottom: 80px;
+    x: 2000;
 }
 
 body #scroll-top:hover {
@@ -211,17 +224,10 @@ body #scroll-top:hover i {
     bottom: 0;
 }
 
-body main {
-    background: #f8f9fa;
-    height: 100%;
-}
-
 
 
 /* SECTION WELCOME */
 main #welcome {
-    position: relative;
-    height: 100vh;
     background-image: -webkit-linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
     background-image: -moz-linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
     background-image: -o-linear-gradient(110deg, #fff 1%, #fff 70%), url(../img/bg/diamond_upholstery.png);
@@ -298,9 +304,9 @@ main #welcome .inf-profile>div a {
     /* justify-content: flex-end; */
 }
 
-main #welcome .photo {
-    -webkit-animation: profile_animate 60s ease-in-out 2s infinite;
-    animation: profile_animate 60s ease-in-out 2s infinite;
+main #welcome .welcome_photo {
+    -webkit-animation: profile_animate 15s ease-in-out 100ms infinite;
+    animation: profile_animate 15s ease-in-out 100ms infinite;
     background: url(../img/profile/photo.png) top no-repeat;
     background-size: 100%;
     box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, .3);
@@ -313,8 +319,7 @@ main #welcome .photo {
 
 /* SECTION SKILL */
 main #skill {
-    height: 100vh;
-    padding: 6rem 0 3rem !important;
+    /* padding: 6rem 0 3rem !important; */
     background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
     background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
     background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
@@ -434,14 +439,19 @@ main .modal {
     transition: .3s;
 }
 
+
+main .modal.show .modal-dialog {
+}
+
 main .modal .modal-dialog .modal-content {
-    padding: 1rem;
+    border: 0 !important;
 }
 
 main .modal .modal-dialog .modal-content .modal-header {
-    /* border: 0; */
-    /* margin: 1rem 0 2rem 0; */
-    /* padding: 0; */
+    background: var(--container-color);
+    color: #fff;
+    background-image: var(--bs-gradient) !important;
+    border: 0;
 }
 
 main .modal .modal-dialog .modal-content .modal-header h3 {
@@ -449,15 +459,12 @@ main .modal .modal-dialog .modal-content .modal-header h3 {
     justify-content: center;
     width: 100%;
     font-size: 1.25rem;
-    font-weight: 500;
     margin: 0;
+    font-weight: bold;
 }
 
 /* CONTENT MODAL */
-main .modal .modal-dialog .modal-content .modal-body {
-    /* padding: 1rem 2rem; */
-    /* padding: 0; */
-}
+main .modal .modal-dialog .modal-content .modal-body {}
 
 main .modal .modal-dialog .modal-content .modal-body img {
     border-radius: 5px;
@@ -538,7 +545,7 @@ main .modal .modal-dialog .modal-content.card {
     }
 }
 
-@keyframes profile_animate {
+/* @keyframes profile_animate {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
     }
@@ -550,8 +557,10 @@ main .modal .modal-dialog .modal-content.card {
     to {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
     }
-}
+} */
 
+
+/* ANIMATION OF BTN  */
 @keyframes scroll-ani-to-top {
     0% {
         opacity: 0;
@@ -592,9 +601,52 @@ main .modal .modal-dialog .modal-content.card {
     main #skill {}
 }
 
+@media (max-width: 768px) {
+    .hTNZSl .bjMDoc {}
+}
+
+@media (max-width: 600px) {
+    .hTNZSl .bjMDoc {}
+}
+
 @media (max-width: 576px) {
+
+
+
+    #preloader::before {
+        content: "";
+        background: #fff url(../img/load/box-move.gif) center center no-repeat;
+        background-size: 70%;
+    }
+
+    .hTNZSl .bjMDoc {
+        width: 65% !important;
+    }
+
+    .hTNZSl .bjMDoc .gcMznj {}
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT {
+        padding: 7px 10px 7px 5px;
+        width: 100%;
+    }
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT .dcYPvh {
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .hTNZSl .fKCpEp {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT .iCUltA {
+        margin-right: 0;
+    }
+
     main #welcome {
-        padding: 40px 0 100px !important;
+        padding: 40px 0 10px !important;
         position: relative;
         top: 0;
     }
@@ -603,7 +655,7 @@ main .modal .modal-dialog .modal-content.card {
         order: 2;
     }
 
-    main #welcome .photo {
+    main #welcome .welcome_photo {
         order: 1;
         position: relative;
         margin: 0 0 1rem 0;
@@ -624,17 +676,90 @@ main .modal .modal-dialog .modal-content.card {
         margin: 0 !important;
     }
 
+    main #skill .col-12 {
+        padding: 0;
+    }
+
+    main #skill .box_skill {
+        padding: 1rem .5rem;
+        gap: 10px 0 !important;
+    }
+
+    main #skill .box_skill .card {
+        width: 82px;
+    }
+
+    main #skill .box_skill .card .card-body {
+        padding: 0.5rem;
+    }
+
+    main #skill .box_skill .card .card-body i {
+        font-size: 1.3rem;
+    }
+
+    main #skill .box_skill .card .card-body h5 {
+        font-size: 10px;
+    }
+
+    main #skill .box_skill .card .card-body p {}
+
     main .modal .modal-dialog .modal-content .modal-header {
-        padding: 0 0 1rem;
-        text-align: center;
+        :
+;
+        cener: ;
     }
 
     main .modal .modal-dialog .modal-content .modal-body {
-        padding: 0;
     }
+
+    main .modal .modal-dialog .modal-content .modal-body p {
+    font-size: 11px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+    main .modal .modal-dialog .modal-content .modal-body ul {}
+
+    main .modal .modal-dialog .modal-content .modal-body ul li {}
+
+    main .modal .modal-dialog .modal-content .modal-body ul li i {}
+
+    main .modal .modal-dialog .modal-content .modal-body ul li p {
+    font-size: 10px;
+}
+
+
+
 }
 
 @media (max-width: 400px) {
+
+    .hTNZSl .bjMDoc {
+        width: 80% !important;
+        margin-inline: 15px;
+    }
+
+    /* SELECT welcome_photo HEADER */
+    .hTNZSl .fKCpEp .laaWy {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* SELECT TEXT TITLE HEADER */
+    .hTNZSl .fKCpEp .iutTvF {}
+
+    .hTNZSl .fKCpEp .iutTvF .bRbKkp {
+        font-size: 14px;
+    }
+
+    .hTNZSl .fKCpEp .iutTvF .dhKaKi {
+        font-size: 11px;
+    }
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT .dcYPvh {
+        font-size: 11px;
+    }
+
     main #welcome .inf-profile {
         margin: 0 auto;
     }
@@ -648,12 +773,39 @@ main .modal .modal-dialog .modal-content.card {
         align-content: center;
     }
 
-    main #welcome .photo {
+    main #welcome .welcome_photo {
         height: 250px;
     }
 }
 
 @media (max-width: 350px) {
+
+    .hTNZSl .bjMDoc {
+        width: 90% !important;
+    }
+
+    /* SELECT welcome_photo HEADER */
+    .hTNZSl .fKCpEp .laaWy {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* SELECT TEXT TITLE HEADER */
+    .hTNZSl .fKCpEp .iutTvF {}
+
+    .hTNZSl .fKCpEp .iutTvF .bRbKkp {
+        font-size: 15px;
+    }
+
+    .hTNZSl .fKCpEp .iutTvF .dhKaKi {
+        font-size: 11px;
+    }
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT .dcYPvh {
+        /* font-size: 9px; */
+        width: 100%;
+    }
+
     main #welcome {
         padding-bottom: 1px !important;
     }
@@ -667,17 +819,40 @@ main .modal .modal-dialog .modal-content.card {
         margin: 0;
     }
 
-    main #welcome .photo {
+    main #welcome .welcome_photo {
         height: 200px;
     }
 }
 
 @media (max-width: 280px) {
+
+    .hTNZSl .bjMDoc {
+        width: 80% !important;
+    }
+
+    /* SELECT welcome_photo HEADER */
+    .hTNZSl .bjMDoc .laaWy {}
+
+    /* SELECT TEXT TITLE HEADER */
+    .hTNZSl .bjMDoc .laaWy .iutTvF>div {}
+
+    .hTNZSl .bjMDoc .laaWy .iutTvF>div>div {}
+
+
+
+    .hTNZSl .bjMDoc .gcMznj {}
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT {}
+
+    .hTNZSl .bjMDoc .gcMznj .eaCcCT .dcYPvh {
+        font-size: 11px;
+    }
+
     main #welcome {
         padding: 40px 0 !important;
     }
 
-    main #welcome .photo {
+    main #welcome .welcome_photo {
         order: 1;
         position: relative;
         margin: 0 0 1rem 0;

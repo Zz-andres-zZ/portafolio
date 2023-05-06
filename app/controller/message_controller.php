@@ -23,7 +23,7 @@ class Mailto
         $this->mail->isSMTP();                                       //Send using SMTP
         $this->mail->SMTPAuth = true;
         $this->mail->SMTPSecure = 'ssl';                             //Enable SMTP authentication
-        $this->mail->SMTPDebug = SMTP::DEBUG_SERVER;                 //Enable verbose debug output
+        //$this->mail->SMTPDebug = SMTP::DEBUG_SERVER;                 //Enable verbose debug output
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;       //Enable implicit TLS encryption
 
         $this->mail->Host = 'smtp.hostinger.com';              //Set the SMTP server to send through
@@ -35,27 +35,23 @@ class Mailto
 
     public function setMessage(
         string $fname,
-        string $lname,
-        string $direction,
-        string $postal,
         string $email,
-        string $telephone,
         string $asunto,
+        string $message,
     ) {
 
         try {
             //Recipients
-            $this->mail->setFrom('andres@fortaleza-digital.online', 'PORTAFOLY WEB');
-            $this->mail->addAddress('andres', $fname);     //Add a recipient
+            $this->mail->setFrom('andres@fortaleza-digital.online', $email);
+            $this->mail->addAddress('andreshmndz@gmail.com', $fname);     //Add a recipient
+            $this->mail->addReplyTo($email, $fname);
 
             //Content
-            $this->mail->Subject = $asunto;
             $this->mail->isHTML(true);
+            $this->mail->Subject = $asunto;
             $this->mail->CharSet = "UTF-8";
-            $this->mail->Body = file_get_contents('message.html');
-
-            echo 'Enviado correctamente';
-
+            $this->mail->Body = $message;
+            /* echo 'Enviado correctamente'; */
             return $this->mail->send();
         } catch (Exception $e) {
             echo "Error al envair:" . $this->mail->ErrorInfo;

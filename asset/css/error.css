@@ -149,10 +149,36 @@
 }
 
 @media (max-width: 576px) {
+    #error{
+    padding: 0;
+}
+
+     #error>div>div {
+         height: 70%;
+         display: flex;
+     }
+    
     #error>div>div>div .message {
         top: 0;
+        padding: 0;
     }
 
+    #error>div>div>div .message span {
+    font-size: 8rem;
+}
+
+    #error>div>div>div .message h2{
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+    #error>div>div>div .box_astronaut {
+}
+#error>div>div>div .box_astronaut img{
+    width: 100%;
+    height: 100px;
+}
     #error>div>div>div .object_moon {
         top: 10%;
         left: 40%;

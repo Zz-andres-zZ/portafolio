@@ -30,3 +30,16 @@
 #footer .navbar-nav li a:hover {
     color: #000;
 }
+
+@media (max-width: 576px) {
+    #footer .navbar-nav{
+    padding: 0;
+}
+
+    /* SECOND COL */
+
+    #footer .copyright {
+    font-size: 14px;
+}
+    #footer .copyright b {color: #9cc0f9;}
+}

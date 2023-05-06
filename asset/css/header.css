@@ -55,11 +55,15 @@
 
     #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link {
         border-radius: 5px;
-        width: 80%;
-        padding: 5px 1rem;
         color: #000;
         display: flex;
         justify-content: flex-start;
+        width: 90%;
+        padding-left: 1.2rem;
+    }
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link i {
+        margin: 0px 10px 0 0;
     }
 
     #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link:hover {
@@ -72,8 +76,8 @@
         background-color: var(--color-primary);
         border-radius: 5px;
         color: #fff;
-        width: 80%;
-        padding: 5px 1rem;
+        width: 90%;
+        padding-left: 1.2rem;
     }
 
     #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active::after {
@@ -82,6 +86,21 @@
 
     #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link:hover::after {
         width: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1.2rem !important;
+    }
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
@@ -95,13 +114,36 @@
         padding: 1rem 0;
     }
 
-    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link {
-        margin-bottom: 10px;
-    }
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link {}
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {}
 }
 
-@media (max-width: 280px) {
-    #navbar .container-fluid .nav-link {
-        width: 73%;
+@media (max-width: 350px) {
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link {}
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link i {
+        margin: 0 5px 0 0;
+    }
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {}
+}
+
+
+
+@media (max-width: 290px) {
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link {
+        width: 90%;
+        padding-left: 5px;
+        padding-right: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding: 8px !important;
+    }
+
+    #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {
+        padding: 8px !important;
     }
 }

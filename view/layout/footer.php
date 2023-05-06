@@ -43,12 +43,10 @@ $url = isset($_GET['url']) ? $_GET['url'] : false;
 
 </footer>
 
-<!-- ✅ load jQuery (optional) ✅ -->
-<script src="asset/jquery/jquery.min.js"></script>
+<!-- ✅ load jQeury (require) ✅ -->
+<script src="asset/vendor/jquery/jquery.min.js"></script>
 <!-- ✅ load Bootstrap bundle (require) ✅ -->
-<script src="asset/bs/js/bootstrap.bundle.min.js"></script>
-<!-- ✅ load sweetalert (optional) ✅ -->
-<script src="asset/sweetalert/js/sweetalert2.all.min.js"></script>
+<script src="asset/vendor/bs/js/bootstrap.bundle.min.js"></script>
 <!-- ✅ load js (require) ✅ -->
 <script src="asset/js/app.js"></script>
 

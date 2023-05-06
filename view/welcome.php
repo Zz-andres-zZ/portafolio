@@ -1,4 +1,4 @@
-<section id="welcome">
+<section id="welcome" class="slider">
     <div class="container">
         <div class="row m-0">
             <div class="col-2 col-lg-1 social">
@@ -43,7 +43,9 @@
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 photo"></div>
+            <div class="col-12 col-lg-6" style="display:contents;">
+                <div class="welcome_photo"></div>
+            </div>
         </div>
         <a class="nav-link w-25 mx-auto text-center d-none d-lg-block mt-5" href="#skill">
             <svg width="32px" height="32px" class="" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">

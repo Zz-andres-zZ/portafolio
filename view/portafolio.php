@@ -21,9 +21,9 @@
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/dolphin.png" class="rounded" alt="" loading="lazy">
                                     <figcaption class="figure-caption">
-                                        Dolphins Swimming Academy
+                                        Dolphins Academy
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalDolphins">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -36,7 +36,7 @@
                                     <figcaption class="figure-caption">
                                         Task Management
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalTask">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -49,7 +49,7 @@
                                     <figcaption class="figure-caption">
                                         Crud php poo
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalCrud">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -62,7 +62,7 @@
                                     <figcaption class="figure-caption">
                                         Reproductor Js
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalReproductor">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -75,7 +75,7 @@
                                     <figcaption class="figure-caption">
                                         Bauer Store
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalBauer">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -88,7 +88,7 @@
                                     <figcaption class="figure-caption">
                                         Card 3D
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalCard">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -104,9 +104,9 @@
                                 <figure class="figure">
                                     <img src="asset/img/portafolio/dolphin.png" class="rounded" alt="" loading="lazy">
                                     <figcaption class="figure-caption">
-                                        Dolphins Swimming Academy
+                                        Dolphins Academy
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalDolphins">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -119,7 +119,7 @@
                                     <figcaption class="figure-caption">
                                         Task Management
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalTask">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -132,7 +132,7 @@
                                     <figcaption class="figure-caption">
                                         Crud php poo
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalCrud">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -145,7 +145,7 @@
                                     <figcaption class="figure-caption">
                                         Reproductor Js
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalReproductor">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -158,7 +158,7 @@
                                     <figcaption class="figure-caption">
                                         Bauer Store
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalBauer">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -171,7 +171,7 @@
                                     <figcaption class="figure-caption">
                                         Card 3D
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalCard">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
                                         <span class="text-muted">18/12/2022</span>
@@ -189,9 +189,10 @@
                                     <figcaption class="figure-caption">
                                         Crud php poo
                                         <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalApp">
-                                            View More
+                                            Leer información
                                             <i class="bi bi-arrow-right-short"></i>
                                         </a>
+                                        <span class="text-muted">18/01/2023</span>
                                     </figcaption>
                                 </figure>
                             </div>

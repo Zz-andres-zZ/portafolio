@@ -12,7 +12,7 @@
                             <i class="bi bi-grid-1x2 icon-grid"></i>
                             <h5 class="card-title">Desarrollador<br>Web</h5>
                             <a type="button" class="nav-link a" data-bs-toggle="modal" data-bs-target="#modalDeveloper">
-                                View More
+                                Leer información
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>
@@ -27,7 +27,7 @@
                             <i class="bi bi-code icon-code"></i>
                             <h5 class="card-title">Análisis de<br>datos</h5>
                             <a type="button" class="nav-link b" data-bs-toggle="modal" data-bs-target="#modalAnalysis">
-                                View More
+                                Leer información
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>
@@ -42,7 +42,7 @@
                             <i class="bi bi-pencil-square icon-pencil"></i>
                             <h5 class="card-title">Desarrollador<br>respaldado</h5>
                             <a type="button" class="nav-link c" data-bs-toggle="modal" data-bs-target="#modalBackend">
-                                View More
+                                Leer información
                                 <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>
@@ -67,7 +67,7 @@
                             <i class="bi bi-mortarboard"></i>
                             Educación
                         </a>
-                        <span class="mx-2"></span>
+                        <span class="mx-3 mx-md-2"></span>
                         <a class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience" aria-selected="false">
                             <i class="bi bi-briefcase"></i>
                             Experiencia
@@ -158,9 +158,9 @@
 
 <!-- Modal WEB DEVELOPER -->
 <div class="modal fade" id="modalDeveloper" tabindex="-1" aria-labelledby="modalDeveloper" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" data-bs-theme="dark">
                 <h3>Desarrollo web</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -205,9 +205,9 @@
 
 <!-- Modal DATA ANALYSIS -->
 <div class="modal fade" id="modalAnalysis" tabindex="-1" aria-labelledby="modalAnalysis" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" data-bs-theme="dark">
                 <h3>Análisis de los datos</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -246,9 +246,9 @@
 
 <!-- Modal BACKEND DEVELOPER -->
 <div class="modal fade" id="modalBackend" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" data-bs-theme="dark">
                 <h3>Desarrollador back-end</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>

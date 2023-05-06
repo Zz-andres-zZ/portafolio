@@ -1,5 +1,5 @@
 main #services {
-    height: 100vh;
+    padding-top: 40px;
     background-image: -webkit-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
     background-image: -moz-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
     background-image: -o-linear-gradient(110deg, #fff 0%, #fff 100%), url(../img/bg/diamond_upholstery.png);
@@ -146,7 +146,7 @@ main #qualification .content-title p {
 /* NAVEGATION TAB */
 main #qualification .navegation-inf .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     border: 0 !important;
 }
 
@@ -168,9 +168,9 @@ main #qualification .navegation-inf .nav .nav-link.active {
 /* TAB CONTENT */
 main #qualification .tab-content {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
+    justify-content: center;
 }
 
 main #qualification .tab-content .tab-pane {
@@ -303,7 +303,7 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
 
 @media (max-width: 575px) {
     main #services {
-        padding: 40px 0 100px !important;
+        padding: 30px 0 50px !important;
         position: relative;
         top: 0;
         height: 100%;
@@ -319,11 +319,13 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
     }
 
     main #services .content-title p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        margin: 2rem 0 0 0;
     }
 
     main #services .box-service .card {
         height: auto;
+        width: 100%;
     }
 
 
@@ -355,6 +357,98 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
 
 }
 
+@media (max-width: 576px) {
+main #services .box-service{}
+
+    main #services .box-service .card{
+}
+    
+    main #services .box-service .card .card-body{}
+
+    main #services .box-service .card .card-body i{
+    margin: 0;
+}
+
+    main #services .box-service .card .card-body h5{
+    font-size: .8rem;
+}
+
+    main #services .box-service .card .card-body a{
+    font-size: .6rem !important;
+}
+main #qualification .navegation-inf{}
+main #qualification .navegation-inf .nav{
+    display: flex;
+    justify-content: center;
+}
+main #qualification .navegation-inf .nav .nav-link{
+    padding: 8px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+    main #qualification .navegation-inf .nav .nav-link i{margin-right: 10px;}
+main #qualification .navegation-inf .nav .nav-link.active {
+    font-size: 12px;
+}
+    main #qualification .tab-content .tab-pane {
+    padding: 0;
+}
+    main #qualification .tab-content .tab-pane .content-panel {
+    margin: 2rem 0 5px;
+    padding: 0;
+    text-align: center;
+}
+main #qualification .tab-content .tab-pane .content-panel h3 {
+    font-size: 14px;
+    line-height: initial;
+}
+main #qualification .tab-content .tab-pane .content-panel p {
+    font-size: 10px;
+    margin: 1rem 0 10px;
+}
+    
+main #qualification .tab-content .tab-pane .content-panel .systems{}
+main #qualification .tab-content .tab-pane .content-panel .systems .qualification-calender{}
+
+
+    
+    main #qualification .tab-content .tab-pane .content-panel .systems p{}
+
+    
+    main #qualification .tab-content .tab-pane .content-panel .figure-content {
+    margin: 0 .8rem;
+}
+    main #qualification .tab-content .tab-pane .content-panel .figure-content .figure-rounded{
+    padding: .4rem;
+    left: -10px;
+}
+        main #qualification .tab-content .tab-pane .content-panel .figure-content .figure-line{
+    padding: 0.4rem;
+    top: 72%;
+    left: -2px;
+}
+        main #qualification .tab-content .tab-pane .content-panel .figure-content .figure-line2{
+    padding: 0.4rem;
+    top: 21%;
+    left: -2px;
+}
+
+
+    
+main #qualification .tab-content .tab-pane .content-panel .diploma {}
+main #qualification .tab-content .tab-pane .content-panel .diploma .diploma-content{}
+
+    
+main #qualification .tab-content .tab-pane .content-panel .diploma .diploma-content p{}
+
+
+    main #qualification .tab-content .tab-pane .content-panel .qualification-calender {
+    font-size: 6px;
+}
+    
+}
+
 @media (max-width: 425px) {
 
     main #qualification .tab-content .tab-pane .figure-content {
@@ -363,7 +457,6 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
     }
 
     main #qualification .tab-content .tab-pane .figure-content .figure-line {
-        top: 202px;
     }
 
     main #qualification .tab-content .tab-pane .figure-content .figure-line2 {
@@ -372,16 +465,15 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
 
     main #qualification .tab-content .tab-pane .figure-content .figure-line3 {}
 
+    main #qualification .tab-content .tab-pane .content-panel .qualification-calender i{}
+
 }
 
 @media (max-width: 350px) {
     main #services .container .row .col-6 {
-        width: 100%;
     }
 
     main #services .box-service .card {
-        height: 200px;
-        width: 80%;
     }
 
     main #services .box-service .card .card-body .nav-link {
@@ -389,11 +481,7 @@ main #qualification .tab-content .tab-pane .qualification-data .figure .qualific
         justify-content: end;
     }
 
-    main #qualification .navegation-inf .nav {
-
-        justify-content: space-between;
-
-    }
+    main #qualification .navegation-inf .nav {}
 
     main #qualification .tab-content .tab-pane .content-panel p {
         /* margin: 1rem 0; */

@@ -8,9 +8,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="about_photo pb-5 pb-lg-0">
-                    <img src="asset/img/profile/photo.png" class="img-fluid rounded-4" alt="...">
-                </div>
+                <div class="about_photo pb-5 pb-lg-0"></div>
             </div>
             <div class="col-12 col-lg-6 padding">
                 <div class="about_data">
@@ -33,7 +31,7 @@
                             <div class="card-body">
                                 <i class="bi bi-headset"></i>
                                 <h6>Apoyo</h6>
-                                <p>En línea 24/7</p>
+                                <p>Onlínea las 24/7</p>
                             </div>
                         </div>
                     </div>
