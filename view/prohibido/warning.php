@@ -34,11 +34,9 @@
         </p>
         <p>> <span>QUE TENGA UN BUEN DÍA ...</span></p>
         <p>> <span>VOLDER A LA APLICACIÓN</span>:
-            [ <a href="../../home" id="go_back" style="text-decoration:underline;">Home</a> ]
+            [ <a href="../../home" style="text-decoration:underline;">Home</a> ]
         </p>
     </div>
-
-    <script src="./js/warnin.js"></script>
 </body>
 
 </html>
