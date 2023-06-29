@@ -80,7 +80,7 @@
                         <div class="card-body bootstrap">
                             <i class="bi bi-bootstrap"></i>
                             <h5 class="card-title">Bootstrap</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Avanzado</p>
                         </div>
                     </div>
 
@@ -96,7 +96,7 @@
                         <div class="card-body git">
                             <i class="bi bi-git"></i>
                             <h5 class="card-title">Git</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Avanzado</p>
                         </div>
                     </div>
 
@@ -104,7 +104,7 @@
                         <div class="card-body js">
                             <i class="bi bi-filetype-js"></i>
                             <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Avanzado</p>
                         </div>
                     </div>
 
@@ -141,7 +141,7 @@
                         <div class="card-body php">
                             <i class="bi bi-filetype-php"></i>
                             <h5 class="card-title">PHP</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Avanzado</p>
                         </div>
                     </div>
 
@@ -149,7 +149,7 @@
                         <div class="card-body mysql">
                             <i class="bi bi-database"></i>
                             <h5 class="card-title">MySQL</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Avanzado</p>
                         </div>
                     </div>
 
@@ -157,7 +157,7 @@
                         <div class="card-body node">
                             <i class="bi bi-node-minus"></i>
                             <h5 class="card-title">Node</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Principiante</p>
                         </div>
                     </div>
 
@@ -165,7 +165,7 @@
                         <div class="card-body mdb">
                             <i class="bi bi-compass"></i>
                             <h5 class="card-title">MongoDB</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Principiante</p>
                         </div>
                     </div>
 
@@ -173,7 +173,7 @@
                         <div class="card-body python">
                             <i class="bi bi-body-text"></i>
                             <h5 class="card-title"><span class="text-primary">P</span> ython</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Principiante</p>
                         </div>
                     </div>
 
@@ -181,7 +181,7 @@
                         <div class="card-body docker">
                             <i class="bi bi-sina-weibo"></i>
                             <h5 class="card-title">Docker</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Principiante</p>
                         </div>
                     </div>
 
@@ -189,7 +189,7 @@
                         <div class="card-body java">
                             <i class="bi bi-filetype-java"></i>
                             <h5 class="card-title">Java</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Principiante</p>
                         </div>
                     </div>
 
@@ -197,7 +197,7 @@
                         <div class="card-body psql">
                             <i class="bi bi-database-gear"></i>
                             <h5 class="card-title">PostgreSQL</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Principiante</p>
                         </div>
                     </div>
                 </div>

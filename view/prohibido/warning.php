@@ -34,24 +34,11 @@
         </p>
         <p>> <span>QUE TENGA UN BUEN DÍA ...</span></p>
         <p>> <span>VOLDER A LA APLICACIÓN</span>:
-            [ <a href="#" id="go_back" style="text-decoration:underline;">Home</a> ]
+            [ <a href="../../home" id="go_back" style="text-decoration:underline;">Home</a> ]
         </p>
     </div>
 
     <script src="./js/warnin.js"></script>
-    <script>
-        const btn = document.getElementById('go_back');
-
-        console.log(btn); // null
-
-        // ✅ Check if element exists before calling addEventListener()
-        if (btn) {
-            // Not called
-            btn.addEventListener('click', () => {
-                alert('You clicked the button');
-            });
-        }
-    </script>
 </body>
 
 </html>

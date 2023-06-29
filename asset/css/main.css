@@ -62,6 +62,16 @@ a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_lo
  *
 */
 /* CONTENEDOR PADRE */
+
+.bjMDoc{
+    z-index: 0;
+}
+
+.bjMDoc .nrXFk {
+    margin-top: 0.8rem;
+    padding: 1rem;
+}
+
 .hTNZSl {
     display: flex !important;
     flex-direction: column;
@@ -69,7 +79,7 @@ a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_lo
 }
 
 .Window__Component-sc-1wwhwms-0 {
-    z-index: 1 !important;
+    z-index: 0 !important;
 }
 
 div[type="text"] {
@@ -118,6 +128,12 @@ div[type="text"] {
     right: -3px !important;
 }
 
+.Window__WindowComponent-sc-1wwhwms-1.fbpTQf {
+    display: flex;
+    flex-direction: column;
+    opacity:1;
+}
+
 /* FOCUS COLOR CHANGE BLUE */
 .content-input input,
 .content-select select {
@@ -145,7 +161,7 @@ div[type="text"] {
 
 /* CHANGE COLOR SELECTED DOCUMENT */
 ::selection {
-    background: var(--container-color) !important;
+    background: #303745 !important;
     border-radius: 5px !important;
     color: #fff;
 }
@@ -203,9 +219,8 @@ body #scroll-top {
     right: 20px;
     text-align: center;
     transition: all 0.3s ease 0s;
-    /* z-index: 200; */
-    bottom: 80px;
-    x: 2000;
+    z-index: 2;
+    bottom: 20px;
 }
 
 body #scroll-top:hover {
@@ -339,7 +354,7 @@ main #skill .box_skill {
 }
 
 main #skill .box_skill .card {
-    width: 110px;
+    width: 120px;
     border: 1px solid #dee2e6;
     text-align: center;
 }
@@ -682,11 +697,11 @@ main .modal .modal-dialog .modal-content.card {
 
     main #skill .box_skill {
         padding: 1rem .5rem;
-        gap: 10px 0 !important;
+        gap: 10px 1px !important;
     }
 
     main #skill .box_skill .card {
-        width: 82px;
+        width: 75px;
     }
 
     main #skill .box_skill .card .card-body {
@@ -702,12 +717,6 @@ main .modal .modal-dialog .modal-content.card {
     }
 
     main #skill .box_skill .card .card-body p {}
-
-    main .modal .modal-dialog .modal-content .modal-header {
-        :
-;
-        cener: ;
-    }
 
     main .modal .modal-dialog .modal-content .modal-body {
     }

@@ -1,6 +1,4 @@
-<?php
-$url = isset($_GET['url']) ? $_GET['url'] : false;
-?>
+<?php $url = isset($_GET['url']) ? $_GET['url'] : false; ?>
 <section id="footer" class="border-1 border-top">
     <div class="container">
         <div class="row m-0">
@@ -49,26 +47,10 @@ $url = isset($_GET['url']) ? $_GET['url'] : false;
 <script src="asset/vendor/bs/js/bootstrap.bundle.min.js"></script>
 <!-- ✅ load js (require) ✅ -->
 <script src="asset/js/app.js"></script>
+<!-- ✅ load ERROR (require) ✅ -->
+<script src="asset/js/devtoolIsOpening.js"></script>
 
 <script>
-    /**
-     * 
-     * ASINGAR CLASE ACTIVE PARA EL ITEM DE MENU
-     * @param {string} section actual. se establecce en el archivo content main
-     * 
-     **/
-    const handle_section_active = (section) => {
-        /* console.log('section', section) */
-        const $menu_top_container = $("#menu_top");
-        // clean all nav-link
-        $menu_top_container.find(".nav-link").removeClass("active");
-        const $section_target = $menu_top_container.find(
-            `.nav-link[href="${section}"]`
-        );
-        // add section active
-        $section_target.addClass("active");
-    };
-
     jQuery(() => {
         handle_section_active("<?= $section_active ?>");
     });

@@ -3,9 +3,9 @@
 class Database
 {
     private static $host = "localhost";
-    private static $baseD = "test";
-    private static $user = "root";
-    private static $pass = "";
+    private static $baseD = "id20685990_db_proyecto";
+    private static $user = "id20685990_root";
+    private static $pass = "8}43STppNd(uj8V+";
     protected static $conect;
 
     public function __construct()

@@ -4,6 +4,7 @@
     justify-content: center;
     position: relative;
     color: #a3a3a3;
+    cursor: pointer;
 }
 
 #navbar>div .offcanvas .offcanvas-body #menu_top .nav-item .nav-link.active {

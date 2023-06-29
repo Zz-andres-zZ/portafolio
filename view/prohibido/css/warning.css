@@ -11,10 +11,25 @@
     color: inherit;
 }
 
+
+/* ELIMINAR GOTA DE AGUA DEL SERVIDOR */
+a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
+    display: none !important;
+    position: relative !important;
+    right: -5000px !important;
+}
+
 body {
     background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%);
     height: 100vh;
 }
+
+
+body div[style="text-align:right"] {}
+
+body:nth-child (1) {}
+body:nth-child (2) {}
+body:nth-child (3) {}
 
 h1 {
     font-size: 45vw;

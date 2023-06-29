@@ -67,7 +67,7 @@
                             <i class="bi bi-mortarboard"></i>
                             Educación
                         </a>
-                        <span class="mx-3 mx-md-2"></span>
+                        <span class="mx-3 mx-md-4"></span>
                         <a class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience" aria-selected="false">
                             <i class="bi bi-briefcase"></i>
                             Experiencia
