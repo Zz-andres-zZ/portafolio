@@ -1,13 +1,19 @@
-jQuery(() => {
-    /* const $blocked = document.getElementsByTagName("body");
-    $($blocked).on("contextmenu", () => {
-        $($blocked).on("keydown", () => {
-            return false;
-        });
-        return false;
-    }); */
+// Cuando el DOM esté listo
+$(document).ready(function () {
+    /*
+     *  ==============================================================
+     * REGISTRO DE VISITAS
+     *
+     * cuando inicializamos en nuestra pagina se agregara a la base de
+     * datos una visita nueva cada 2 horas de visitar la pagina
+     *  ==============================================================
+     */
+    count_visits();
 
-    /* on="return false" onkeydown="return false" */
+    /* Llamado del cv */
+    download_dv();
+
+
     /*
      *  ==============================================================
      * PRELOADER FIXED PARA DAR ESPERA A LOS ARCHIVOS DEL SISTEMA
@@ -15,23 +21,7 @@ jQuery(() => {
      * cuando inicializamos en nuestra pagina se desplazara un loader
      *  ==============================================================
      */
-    $(document).ready(() => {
-        $("#preloader").fadeOut();
-    });
-
-    /*
-     *
-     *  ==================================================
-     *  BOTON FLOTADOR PARA CAMBIAR LA SUPERPOCISION
-     *
-     *  el boton de whatsap tiene un z-index de 999999
-     *  esto hace ocultarlo ante el debugger de la pagina
-     *
-     *  ==================================================
-     */
-
-    const $btn_whatsapp = document.querySelector("div[role='button']");
-    $(this).removeAttr("style");
+    $("#preloader").fadeOut();
 
     /*
      *  =========================================================
@@ -42,29 +32,21 @@ jQuery(() => {
      *
      *  =========================================================
      */
-    const mybutton = document.querySelector("#scroll-top");
-    mybutton.addEventListener("click", backToTop);
-    window.onscroll = function () {
-        scrollFunction();
-    };
-    const scrollFunction = () => {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.display = "block";
-            return true;
+    const $scrollButton = $("#scroll-top");
+    // Agregar evento de clic al botón Scroll Top
+    $scrollButton.on("click", function () {
+        $("html, body").animate({ scrollTop: 0 }, 1); // Desplazamiento suave
+    });
+    // Mostrar u ocultar el botón Scroll Top al hacer scroll
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+            $scrollButton.fadeIn();
+        } else {
+            $scrollButton.fadeOut();
         }
-        mybutton.style.display = "none";
-        return true;
-    };
-    // Cuando el usuario haga clic en el botón,
-    // desplácese hasta la parte superior del documento
-    function backToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+    });
 });
+
 const handle_section_active = (section) => {
     const $menu_top_container = $("#menu_top");
     $menu_top_container.find(".nav-link").removeClass("active");
@@ -73,3 +55,37 @@ const handle_section_active = (section) => {
     );
     $section_target.addClass("active");
 };
+
+const count_visits = () => {
+    $.ajax({
+        url: "app/model/countVisits.php",
+        type: "POST",
+        dataType: "json",
+        success: function (response) {
+            //console.log("response", response);
+            var visits = response.visits;
+            var date = response.date;
+            document.querySelector("#visitsCounter").innerHTML = visits;
+            document.querySelector("#lastVisit").innerHTML = date;
+        },
+        error: function (xhr, status, error) {
+            console.log(error);
+        },
+    });
+}
+
+const download_dv = () => {
+    $("#download").on("click", function(){
+        $.ajax({
+        url: "app/controller/download_cv.php",
+        type: "POST",
+        dataType: "json",
+        success: function (response) {
+            console.log("response", response);
+        },
+        error: function (xhr, status, error) {
+            console.log("error", error);
+        },
+    });
+    })
+}

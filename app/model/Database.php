@@ -1,28 +1,17 @@
 <?php
-
 class Database
 {
-    private static $host = "localhost";
-    private static $baseD = "id20685990_db_proyecto";
-    private static $user = "id20685990_root";
-    private static $pass = "8}43STppNd(uj8V+";
-    protected static $conect;
-
-    public function __construct()
-    {
+    private static $hostname = "mysql:host=localhost;dbname=";
+    private static $username = "";
+    private static $password = "";
+    protected static $conn;
+    public function getConnection() {
         try {
-            self::$conect = new PDO("mysql:host=" . self::$host . ";dbname=" . self::$baseD, self::$user, self::$pass);
-            self::$conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "<div alt='conectado' class='conection'><span class='status'></span></div>";
-            return self::$conect;
+            self::$conn = new PDO(self::$hostname, self::$username, self::$password);
+            self::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return self::$conn;
         } catch (PDOException $e) {
-            $response = ['Error' => 'error' . $e->getMessage()];
-            echo "<pre>";
-            print_r([
-                'AQUI EL ERROR' => json_encode($response)
-            ]);
-            echo "</pre>";
-            die();
+            die("Error de conexión: " . $e->getMessage());
         }
     }
 }

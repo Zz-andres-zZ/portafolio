@@ -2,7 +2,7 @@
     <div class="container-fluid px-lg-4 g-0">
         <a class="nav-link m-0 p-0 d-flex align-items-center" href="home">
             <img src="asset/img/logo/logo.png" class="w-50 img-fluid position-relative top-0" alt="logo">
-            <?php /* $conectar = new Database(); */ ?>
+            <?php $conectar = new Database(); ?>
         </a>
 
         <button class="navbar-toggler p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

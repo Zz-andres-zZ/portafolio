@@ -83,7 +83,10 @@
                 <div class="iframe">
                     <div class="card border-0">
                         <div class="card-body pb-1">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79444.64391671501!2d-0.21428374128957384!3d51.51972634746694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876045108e9cad3%3A0x6514817fa6d57c9!2sThe+Web+Kitchen!5e0!3m2!1sen!2suk!4v1469624353093" width="100%" frameborder="0" style="height:260px;border-radius:5px;" allowfullscreen="on"></iframe>
+                            
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31369.884485749208!2d-71.61828903797607!3d10.638799515516336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8999ad6c3180c3%3A0xc20e77a97275b910!2sLibertador!5e0!3m2!1ses!2sve!4v1688048293132!5m2!1ses!2sve"  width="100%" frameborder="0" style="height:260px;border-radius:5px;" allowfullscreen="on" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -145,7 +148,7 @@
                         <!-- Information -->
                         <div class="row mb-0 mb-md-3">
                             <div class="col" style="padding:0">
-                                <textarea class="form-control" id="message" name="message" placeholder="Introduzca su masaje para nosotros aquí. Nos pondremos en contacto con usted dentro de 2 días hábiles." rows="4" require></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Introduzca su masaje aquí. Me pondre en contacto con usted dentro de 2 días hábiles." rows="4" require></textarea>
                             </div>
                         </div>
 

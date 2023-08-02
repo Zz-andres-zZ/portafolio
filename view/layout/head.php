@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="image" content="./asset/img/profile/profile.png">
     <title>Mi portafolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <base href="./">

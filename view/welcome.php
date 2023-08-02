@@ -1,5 +1,11 @@
 <section id="welcome" class="slider">
     <div class="container">
+        <div class="count">
+            <div class="content-count">
+                <p>Visitas <i class="bi bi-eye"></i> <span id="visitsCounter" data-bs-theme="green"></span></p>
+                <p>Ultima visita <i class="bi bi-eye-slash"></i> <span id="lastVisit" data-bs-theme="red"></span></p>
+            </div>
+        </div>
         <div class="row m-0">
             <div class="col-2 col-lg-1 social">
                 <ul class="nav flex-column">
@@ -52,7 +58,7 @@
                 <path class="wheel" d="M123.359,79.775l0,72.843" style="fill: none; stroke: var(--update-background-difu); stroke-width: 20px;"></path>
                 <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill: none; stroke: var(--update-background-difu); stroke-width: 20px;"></path>
             </svg>
-            <span class="">Scroll Down</span>
+            <span id="scrollButton">Scroll Down</span>
             <i class="bi bi-arrow-down-short"></i>
         </a>
     </div>
@@ -128,7 +134,7 @@
                         <div class="card-body sass">
                             <i class="bi bi-filetype-sass"></i>
                             <h5 class="card-title">Sass</h5>
-                            <p class="card-text">Intermedio</p>
+                            <p class="card-text">Avanzado</p>
                         </div>
                     </div>
                 </div>
