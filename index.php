@@ -1,7 +1,4 @@
-<?php
-require_once "view/layout/head.php";
-require_once "app/model/Database.php";
-?>
+<?php require_once "view/layout/head.php"; ?>
 
 <header class="sticky-top">
     <?php require_once "view/layout/include/header.php"; ?>
