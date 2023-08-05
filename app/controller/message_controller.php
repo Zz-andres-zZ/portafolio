@@ -23,15 +23,12 @@ class Mailto {
         $this->mail->SMTPSecure = 'ssl';                             //Enable SMTP authentication
         //$this->mail->SMTPDebug = SMTP::DEBUG_SERVER;                 //Enable verbose debug output
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;       //Enable implicit TLS encryption
-
-        //$this->mail->Host = 'smtp.hostinger.com';              //Set the SMTP server to send through
-        //$this->mail->Port = 465;                               //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
-        $this->mail->Host = 'smtp.hostinger.com';              //Set the SMTP server to send through
-        $this->mail->Port = 465;                               //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $this->mail->Host = '';              //Set the SMTP server to send through
+        $this->mail->Port = ;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
-        $this->mail->Username = 'andresjhm.2440@couchwmt.com';  //SMTP username
-        $this->mail->Password = 'Developer1@couchwmt.com';     //SMTP password
+        $this->mail->Username = '';  //SMTP username
+        $this->mail->Password = '';     //SMTP password
     
     }
 
